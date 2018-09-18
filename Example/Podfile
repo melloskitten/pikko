@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Pikko_Example' do
+  pod 'Pikko', :path => '../'
+
+  target 'Pikko_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
