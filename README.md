@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pikko
 
 [![CI Status](https://img.shields.io/travis/Sandra/Pikko.svg?style=flat)](https://travis-ci.org/Sandra/Pikko)
@@ -27,3 +28,7 @@ Sandra, sandra.grujovic@tum.de
 ## License
 
 Pikko is available under the MIT license. See the LICENSE file for more info.
+=======
+# pikko
+(Attempt at creating a) functional color picker for iOS.
+>>>>>>> ef61a28ca076dd8012e708e8f447c3e3c1bf6f54
