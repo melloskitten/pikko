@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D0BDAF6A3262C59F0D6C20 /* Pods_Pikko_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A606BC573F3758562E9ACDF /* Pods_Pikko_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7448C4748701A4AA174D83EA /* Pods_Pikko_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E17A6178663F0C937C4AE3 /* Pods_Pikko_Example.framework */; };
-		A9A534F0B1586CE2D06AC1C1 /* Pods_Pikko_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6509D467BF7FA64282F28769 /* Pods_Pikko_Tests.framework */; };
+		B54ABC63D6EA6055AF44F281 /* Pods_Pikko_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */; };
+		BCD120392151763F0033CDEF /* PikkoColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD120382151763F0033CDEF /* PikkoColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4040348A38E7559D523615F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5068D7A093398C4632900AD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		55885EF27EB32EC82B86CBC0 /* Pods-Pikko_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0A606BC573F3758562E9ACDF /* Pods_Pikko_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		161152AAD75AB3B243E85632 /* Pods-Pikko_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4040348A38E7559D523615F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5068D7A093398C4632900AD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Pikko_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pikko_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +43,12 @@
 		607FACE51AFB9204008FA782 /* Pikko_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pikko_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6509D467BF7FA64282F28769 /* Pods_Pikko_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E17A6178663F0C937C4AE3 /* Pods_Pikko_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B29E08E3C881605C87F5845F /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B7817AED32E9DE4C01A88595 /* Pods-Pikko_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E60B7588F1812AFA869FEC36 /* Pikko.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Pikko.podspec; path = ../Pikko.podspec; sourceTree = "<group>"; };
-		EFA31016F3E81EFACA242F1C /* Pods-Pikko_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD120382151763F0033CDEF /* PikkoColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikkoColorPicker.swift; sourceTree = "<group>"; };
+		D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E60B7588F1812AFA869FEC36 /* Pikko.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pikko.podspec; path = ../Pikko.podspec; sourceTree = "<group>"; };
+		F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F3468ECFB9902681A4562C53 /* Pods-Pikko_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7448C4748701A4AA174D83EA /* Pods_Pikko_Example.framework in Frameworks */,
+				B54ABC63D6EA6055AF44F281 /* Pods_Pikko_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +64,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A534F0B1586CE2D06AC1C1 /* Pods_Pikko_Tests.framework in Frameworks */,
+				16D0BDAF6A3262C59F0D6C20 /* Pods_Pikko_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550178FF5CF97F6B72FECC99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */,
+				0A606BC573F3758562E9ACDF /* Pods_Pikko_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +87,8 @@
 				607FACD21AFB9204008FA782 /* Example for Pikko */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				D497055DA17B09EB6328A2FF /* Pods */,
-				EEE70FF209113491B470778A /* Frameworks */,
+				76594B26633265FB73159423 /* Pods */,
+				550178FF5CF97F6B72FECC99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +110,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				BCD120382151763F0033CDEF /* PikkoColorPicker.swift */,
 			);
 			name = "Example for Pikko";
 			path = Pikko;
@@ -139,24 +151,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		D497055DA17B09EB6328A2FF /* Pods */ = {
+		76594B26633265FB73159423 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				55885EF27EB32EC82B86CBC0 /* Pods-Pikko_Example.debug.xcconfig */,
-				B7817AED32E9DE4C01A88595 /* Pods-Pikko_Example.release.xcconfig */,
-				B29E08E3C881605C87F5845F /* Pods-Pikko_Tests.debug.xcconfig */,
-				EFA31016F3E81EFACA242F1C /* Pods-Pikko_Tests.release.xcconfig */,
+				F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */,
+				F3468ECFB9902681A4562C53 /* Pods-Pikko_Example.release.xcconfig */,
+				D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */,
+				161152AAD75AB3B243E85632 /* Pods-Pikko_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EEE70FF209113491B470778A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				74E17A6178663F0C937C4AE3 /* Pods_Pikko_Example.framework */,
-				6509D467BF7FA64282F28769 /* Pods_Pikko_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Pikko_Example" */;
 			buildPhases = (
-				D3FC9F2D73CEF11101D1B146 /* [CP] Check Pods Manifest.lock */,
+				0BC7C776E1A7347C8F889C2A /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E15618BC34CE0C0C4373D6A7 /* [CP] Embed Pods Frameworks */,
+				24ACCD238418D88EB78A9D9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,7 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Pikko_Tests" */;
 			buildPhases = (
-				B94E4AC724953F726C8F7A94 /* [CP] Check Pods Manifest.lock */,
+				D1F40F4F38A200ADAF5AB52D /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -212,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 45E39Y8V9N;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 45E39Y8V9N;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -261,25 +266,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B94E4AC724953F726C8F7A94 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Pikko_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3FC9F2D73CEF11101D1B146 /* [CP] Check Pods Manifest.lock */ = {
+		0BC7C776E1A7347C8F889C2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,7 +284,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E15618BC34CE0C0C4373D6A7 /* [CP] Embed Pods Frameworks */ = {
+		24ACCD238418D88EB78A9D9A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,6 +302,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D1F40F4F38A200ADAF5AB52D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pikko_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,6 +329,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				BCD120392151763F0033CDEF /* PikkoColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,9 +472,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55885EF27EB32EC82B86CBC0 /* Pods-Pikko_Example.debug.xcconfig */;
+			baseConfigurationReference = F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45E39Y8V9N;
 				INFOPLIST_FILE = Pikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -481,9 +488,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7817AED32E9DE4C01A88595 /* Pods-Pikko_Example.release.xcconfig */;
+			baseConfigurationReference = F3468ECFB9902681A4562C53 /* Pods-Pikko_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45E39Y8V9N;
 				INFOPLIST_FILE = Pikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -496,8 +504,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B29E08E3C881605C87F5845F /* Pods-Pikko_Tests.debug.xcconfig */;
+			baseConfigurationReference = D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 45E39Y8V9N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -518,8 +527,9 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA31016F3E81EFACA242F1C /* Pods-Pikko_Tests.release.xcconfig */;
+			baseConfigurationReference = 161152AAD75AB3B243E85632 /* Pods-Pikko_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 45E39Y8V9N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
