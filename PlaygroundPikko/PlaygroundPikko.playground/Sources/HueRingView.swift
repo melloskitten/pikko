@@ -36,11 +36,3 @@ class HueRingView: UIView {
     }
     
 }
-
-var liveView = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
-
-var hue = HueRingView()
-liveView.addSubview(hue)
-
-PlaygroundPage.current.liveView = liveView
-
