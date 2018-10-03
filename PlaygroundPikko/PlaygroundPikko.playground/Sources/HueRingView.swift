@@ -3,7 +3,7 @@ import UIKit
 import Foundation
 
 
-class HueRingView: UIView {
+public class HueRingView: UIView {
     
     var offset = CGFloat(200)
     
@@ -14,7 +14,7 @@ class HueRingView: UIView {
             let layer = CALayer()
             layer.backgroundColor = UIColor(hue: CGFloat(i)/255.0, saturation: 1.0, brightness: 1.0, alpha: 1.0).cgColor
             
-            let radius = CGFloat(100)
+            let radius = CGFloat(150)
             
             let position = (CGFloat(i) / 255.0) * 360.0
             
