@@ -45,10 +45,25 @@ class HueRingView: UIView {
 
 
 class PikkoView: UIView {
-    
-    
+
+    var hue: HueRingView?
+    var square: SquareColorView?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .gray
+        let radius = frame.width/2
+        let borderWidth: CGFloat = 30.0
+        let customWidth: CGFloat = sqrt(2) * (radius - borderWidth)
+        
+        hue = HueRingView(frame: liveView.frame, borderWidth: borderWidth)
+        square = SquareColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth))
+        
+        // TODO: remove force unwrap
+        square!.center = hue!.center
+        
+        self.addSubview(hue!)
+        self.addSubview(square!)
         
         self.isUserInteractionEnabled = true
         let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(holdPicker(_:)))
@@ -71,7 +86,13 @@ class PikkoView: UIView {
     func setColorPickerPin(location: CGPoint, sourceView: UIView) {
         let color = getPixelColorAtPoint(point: location, sourceView: sourceView)
         
-        print(color)
+        var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        
+        color!.getHue(&h, saturation: &s, brightness: &b, alpha: &a)
+    
+        
+        self.square?.updateColors(hue: h)
+        
         //visualisationColorView.backgroundColor = color
         //visualisationColorView.center = location
     }
@@ -108,49 +129,41 @@ class PikkoView: UIView {
 public class SquareColorView: UIView {
     
     var samplingRate: CGFloat = 25.0
-    
-    var visualisationColorView: UIView!
     var colorPaletteView: UIView!
+    var hue: CGFloat = 0.0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.colorPaletteView = UIView(frame: frame)
-        self.visualisationColorView = UIView(frame: frame)
-        
-        createSaturationLayer()
+        createSaturationLayer(hue: hue)
         createBrightnessLayer()
         self.addSubview(colorPaletteView)
-        self.addSubview(visualisationColorView)
-        //visualisationColorView.backgroundColor = .blue
-        //visualisationColorView.layer.borderWidth = 2
-        visualisationColorView.layer.borderColor = UIColor.white.cgColor
     }
     
-    func createSaturationLayer() {
-        
-        let fullGradient = UIView(frame: self.frame)
-        
+    func updateColors(hue: CGFloat) {
+        createSaturationLayer(hue: hue)
+        createBrightnessLayer()
+    }
+    
+    func createSaturationLayer(hue: CGFloat) {
         let valueLayer = CAGradientLayer()
         var tempArray = [CGColor]()
         
         for i in 0..<Int(samplingRate) {
             let saturationValue = CGFloat(CGFloat(i) / samplingRate)
-            let color = UIColor(hue: CGFloat(0)/255.0, saturation: saturationValue, brightness: 1.0, alpha: 1.0)
+            let color = UIColor(hue: hue, saturation: saturationValue, brightness: 1.0, alpha: 1.0)
             tempArray.append(color.cgColor)
         }
         
         valueLayer.colors = tempArray
         valueLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         valueLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        valueLayer.frame = fullGradient.bounds
+        valueLayer.frame = bounds
         
-        fullGradient.layer.addSublayer(valueLayer)
-        
-        colorPaletteView.addSubview(fullGradient)
+        colorPaletteView.layer.addSublayer(valueLayer)
     }
     
     func createBrightnessLayer() {
-        let sampledGradient = UIView(frame: self.frame)
         let smallValueLayer = CAGradientLayer()
         var smallTempArray = [CGColor]()
         
@@ -161,11 +174,9 @@ public class SquareColorView: UIView {
         }
         
         smallValueLayer.colors = smallTempArray
-        smallValueLayer.frame = sampledGradient.bounds
+        smallValueLayer.frame = bounds
         
-        sampledGradient.layer.addSublayer(smallValueLayer)
-        
-        colorPaletteView.addSubview(sampledGradient)
+        colorPaletteView.layer.addSublayer(smallValueLayer)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -178,21 +189,6 @@ public class SquareColorView: UIView {
 
 
 var liveView = PikkoView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-liveView.backgroundColor = .gray
-let radius = liveView.frame.width/2
-let borderWidth: CGFloat = 30.0
-
-
-var hue = HueRingView(frame: liveView.frame, borderWidth: borderWidth)
-// TODO: Parametrize all position information.
-
-var customWidth: CGFloat = sqrt(2) * (radius - borderWidth)
-var square = SquareColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth))
-square.center = hue.center
-
-liveView.addSubview(square)
-liveView.addSubview(hue)
-
 
 PlaygroundPage.current.liveView = liveView
 
