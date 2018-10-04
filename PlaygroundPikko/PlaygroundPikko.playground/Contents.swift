@@ -2,8 +2,6 @@ import PlaygroundSupport
 import UIKit
 import Foundation
 
-
-
 class HueRingView: UIView {
     
     var offset_x: CGFloat = 0.0
@@ -44,6 +42,7 @@ class HueRingView: UIView {
         }
     }
 }
+
 
 class PikkoView: UIView {
     
@@ -180,12 +179,20 @@ public class SquareColorView: UIView {
 
 var liveView = PikkoView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
 liveView.backgroundColor = .gray
+let radius = liveView.frame.width/2
+let borderWidth: CGFloat = 30.0
 
-var hue = HueRingView(frame: liveView.frame, borderWidth: 30.0)
-var square = SquareColorView(frame: CGRect(x: 38, y: 45, width: 180, height: 180))
 
-//liveView.addSubview(square)
+var hue = HueRingView(frame: liveView.frame, borderWidth: borderWidth)
+// TODO: Parametrize all position information.
+
+var customWidth: CGFloat = sqrt(2) * (radius - borderWidth)
+var square = SquareColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth))
+square.center = hue.center
+
+liveView.addSubview(square)
 liveView.addSubview(hue)
+
 
 PlaygroundPage.current.liveView = liveView
 
