@@ -3,6 +3,48 @@ import UIKit
 import Foundation
 
 
+
+class HueRingView: UIView {
+    
+    var offset_x: CGFloat = 0.0
+    var offset_y: CGFloat = 0.0
+    var radius: CGFloat
+    var borderWidth: CGFloat
+    var borderHeight: CGFloat
+    
+    init(frame: CGRect, borderWidth: CGFloat) {
+        self.borderWidth = borderWidth
+        // FIXME: Currently hardcoded borderHeight.
+        self.borderHeight = 5
+        self.radius = (frame.width-borderWidth)/2
+        super.init(frame: frame)
+        self.offset_x = (frame.width-borderWidth)/2
+        self.offset_y = (frame.height-borderHeight)/2
+        createHueRing()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func createHueRing() {
+        for i in 0..<255 {
+            let layer = CALayer()
+            layer.backgroundColor = UIColor(hue: CGFloat(i)/255.0, saturation: 1.0, brightness: 1.0, alpha: 1.0).cgColor
+            
+            let position = (CGFloat(i) / 255.0) * 360.0
+            let position_y = sin(position * CGFloat.pi / 180.0) * radius
+            let position_x = cos(position * CGFloat.pi / 180.0) * radius
+            
+            layer.frame = CGRect(x: position_x+offset_x, y: position_y+offset_y, width: borderWidth, height: borderHeight)
+            layer.transform = CATransform3DMakeRotation((position*CGFloat.pi)/180.0, 0, 0, 1.0)
+            layer.allowsEdgeAntialiasing = true
+            
+            self.layer.addSublayer(layer)
+        }
+    }
+}
+
 class PikkoView: UIView {
     
     
@@ -136,13 +178,13 @@ public class SquareColorView: UIView {
 
 
 
-var liveView = PikkoView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
+var liveView = PikkoView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
 liveView.backgroundColor = .gray
 
-var hue = HueRingView()
+var hue = HueRingView(frame: liveView.frame, borderWidth: 30.0)
 var square = SquareColorView(frame: CGRect(x: 38, y: 45, width: 180, height: 180))
 
-liveView.addSubview(square)
+//liveView.addSubview(square)
 liveView.addSubview(hue)
 
 PlaygroundPage.current.liveView = liveView

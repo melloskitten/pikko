@@ -2,13 +2,15 @@ import PlaygroundSupport
 import UIKit
 import Foundation
 
-
+/*
 public class HueRingView: UIView {
     
     var offset = CGFloat(200)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        self.backgroundColor = UIColor.blue
         for i in 0..<255 {
             
             let layer = CALayer()
@@ -30,9 +32,11 @@ public class HueRingView: UIView {
         }
         
     }
+
+    convenience init(frame: CG)
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-}
+}*/
