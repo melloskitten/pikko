@@ -1,6 +1,12 @@
-import PlaygroundSupport
+//
+//  HueRingView.swift
+//  Pikko_Example
+//
+//  Created by Sandra Grujovic on 05.10.18.
+//  Copyright © 2018 CocoaPods. All rights reserved.
+//
+
 import UIKit
-import Foundation
 
 class HueRingView: UIView {
     

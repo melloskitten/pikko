@@ -12,9 +12,9 @@ import Pikko
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        var test = PikkoColorPicker(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        self.view.addSubview(test)
+        var pikko = PikkoView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        pikko.center = self.view.center
+        self.view.addSubview(pikko)
     }
 
     override func didReceiveMemoryWarning() {
