@@ -15,7 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B54ABC63D6EA6055AF44F281 /* Pods_Pikko_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */; };
-		BCD120392151763F0033CDEF /* PikkoColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD120382151763F0033CDEF /* PikkoColorPicker.swift */; };
+		BC84127C2167B9710043921C /* HueRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127B2167B9710043921C /* HueRingView.swift */; };
+		BC84127E2167B9B30043921C /* BrightnessSaturationColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */; };
+		BC8412802167B9DE0043921C /* PikkoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127F2167B9DE0043921C /* PikkoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCD120382151763F0033CDEF /* PikkoColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikkoColorPicker.swift; sourceTree = "<group>"; };
+		BC84127B2167B9710043921C /* HueRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRingView.swift; sourceTree = "<group>"; };
+		BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSaturationColorView.swift; sourceTree = "<group>"; };
+		BC84127F2167B9DE0043921C /* PikkoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikkoView.swift; sourceTree = "<group>"; };
 		D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E60B7588F1812AFA869FEC36 /* Pikko.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pikko.podspec; path = ../Pikko.podspec; sourceTree = "<group>"; };
 		F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,7 +114,9 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				BCD120382151763F0033CDEF /* PikkoColorPicker.swift */,
+				BC84127B2167B9710043921C /* HueRingView.swift */,
+				BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */,
+				BC84127F2167B9DE0043921C /* PikkoView.swift */,
 			);
 			name = "Example for Pikko";
 			path = Pikko;
@@ -328,8 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BC84127C2167B9710043921C /* HueRingView.swift in Sources */,
+				BC8412802167B9DE0043921C /* PikkoView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				BCD120392151763F0033CDEF /* PikkoColorPicker.swift in Sources */,
+				BC84127E2167B9B30043921C /* BrightnessSaturationColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
