@@ -38,7 +38,7 @@ class HueRingView: UIView {
     }
     
     private func createSelector() {
-        selector = UIView(frame: CGRect(x: 0, y: 0, width: borderWidth * scale, height: borderWidth*scale))
+        selector = UIView(frame: CGRect(x: 0, y: 0, width: borderWidth * scale, height: borderWidth * scale))
         selector?.center = CGPoint(x: (borderWidth)/2, y: offset_y)
         selector?.layer.cornerRadius = (borderWidth * scale)/2
         selector?.isUserInteractionEnabled = true
@@ -51,10 +51,11 @@ class HueRingView: UIView {
     }
     
     private func setUpGestureRecognizer() {
-        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(selectorPanned(_:)))
-        selector?.addGestureRecognizer(panGestureRecognizer)
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(selectorPanned(_:)))
+        longPressGestureRecognizer.minimumPressDuration = 0.0
+        selector?.addGestureRecognizer(longPressGestureRecognizer)
     }
-
+    
     @objc func selectorPanned(_ panGestureRecognizer: UIPanGestureRecognizer) {
         let location = panGestureRecognizer.location(in: self)
 
@@ -67,6 +68,30 @@ class HueRingView: UIView {
         
         selector?.center = CGPoint(x: position_x, y: position_y)
         updateColor(point: (selector?.center)!)
+        animateScale(panGestureRecognizer: panGestureRecognizer)
+    }
+    
+    private func animateScaleUp() {
+        UIView.animate(withDuration: 0.25) {
+            self.selector?.transform = CGAffineTransform(scaleX: self.scale,y: self.scale)
+        }
+    }
+    
+    private func animateScaleDown() {
+        UIView.animate(withDuration: 0.25) {
+            self.selector?.transform = CGAffineTransform(scaleX: 1,y: 1)
+        }
+    }
+    
+    private func animateScale(panGestureRecognizer: UIPanGestureRecognizer) {
+        switch panGestureRecognizer.state {
+        case .began:
+            animateScaleUp()
+        case .ended:
+            animateScaleDown()
+        default:
+            break
+        }
     }
     
     private func updateColor(point: CGPoint) {
