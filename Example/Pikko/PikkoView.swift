@@ -25,33 +25,21 @@ class PikkoView: UIView {
         let borderWidth: CGFloat = 30.0
         let radius = frame.width/2
         let customWidth: CGFloat = sqrt(2) * (radius - borderWidth)
+        let scale: CGFloat = 1.5
         
-        hue = HueRingView(frame: frame, borderWidth: borderWidth, scale: 1.5)
-        square = BrightnessSaturationColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth))
+        backgroundColor = .gray
+        
+        hue = HueRingView(frame: frame, borderWidth: borderWidth, scale: scale)
+        square = BrightnessSaturationColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth), borderWidth: borderWidth, scale: scale)
         
         square!.center = hue!.center
         
         self.addSubview(hue!)
         self.addSubview(square!)
     }
-    
-    /*fileprivate func setUpGestureRecognizer() {
-        self.isUserInteractionEnabled = true
-        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(holdPicker(_:)))
-        self.addGestureRecognizer(gestureRecognizer)
-    }*/
-    
-    
-    /*func updateSaturationBrightnessColorView(location: CGPoint, sourceView: UIView) {
-        let color = ColorUtilities.getPixelColorAtPoint(point: location, sourceView: sourceView)
-        
-        var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        color!.getHue(&h, saturation: &s, brightness: &b, alpha: &a)
-        self.square?.updateColors(hue: h)
-    }*/
-    
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }
+

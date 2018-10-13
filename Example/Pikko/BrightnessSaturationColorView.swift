@@ -13,21 +13,71 @@ public class BrightnessSaturationColorView: UIView {
     
     // FIXME: Make sampling rate parametric depending on size of canvas.
     var samplingRate: CGFloat = 25.0
-    var colorPaletteView: UIView!
+    var brightnessSaturationView: UIView!
     var brightnessLayer: CAGradientLayer?
     var saturationLayer: CAGradientLayer?
+    var selector: UIView!
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, borderWidth: CGFloat, scale: CGFloat) {
         super.init(frame: frame)
-        saturationLayer = createSaturationLayer(hue: 0.0)
-        brightnessLayer = createBrightnessLayer()
-        
-        layer.addSublayer(saturationLayer!)
-        layer.addSublayer(brightnessLayer!)
+        createView(frame)
+        createSelector(borderWidth, scale)
     }
     
-    public func updateColors(hue: CGFloat) {
-        saturationLayer?.colors = generateSaturationInterpolationArray(hue: hue)
+    private func createView(_ frame: CGRect) {
+        saturationLayer = createSaturationLayer(hue: 0.0)
+        brightnessLayer = createBrightnessLayer()
+        brightnessSaturationView = UIView(frame: frame)
+        
+        brightnessSaturationView.layer.addSublayer(saturationLayer!)
+        brightnessSaturationView.layer.addSublayer(brightnessLayer!)
+        addSubview(brightnessSaturationView)
+    }
+    
+    private func createSelector(_ borderWidth: CGFloat, _ scale: CGFloat) {
+        let selectorWidth = borderWidth * scale
+        selector = UIView(frame: CGRect(x: 0-selectorWidth/2, y: 0-selectorWidth/2, width: selectorWidth, height: selectorWidth))
+        selector.backgroundColor = .white
+        selector.layer.cornerRadius = selectorWidth/2
+        selector.layer.borderColor = UIColor.white.cgColor
+        selector.layer.borderWidth = 1
+        selector.isUserInteractionEnabled = true
+        
+        setUpGestureRecognizer()
+        addSubview(selector)
+    }
+    
+    private func setUpGestureRecognizer() {
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(selectorPanned(_:)))
+        longPressGestureRecognizer.minimumPressDuration = 0.0
+        selector?.addGestureRecognizer(longPressGestureRecognizer)
+    }
+    
+    @objc func selectorPanned(_ panGestureRecognizer: UIPanGestureRecognizer) {
+        var location = panGestureRecognizer.location(in: self)
+        
+        if location.x <= 0 {
+            location.x = 0
+        }
+        
+        if location.x >= frame.width {
+            location.x = frame.width - 1
+        }
+        
+        if location.y <= 0 {
+            location.y = 0
+        }
+        
+        if location.y >= frame.height {
+            location.y = frame.height - 1
+        }
+        
+        updateColor(point: location)
+        selector.center = location
+    }
+    
+    private func updateColor(point: CGPoint) {
+        selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: brightnessSaturationView)
     }
     
     private func generateSaturationInterpolationArray(hue: CGFloat) -> [CGColor] {
@@ -48,7 +98,7 @@ public class BrightnessSaturationColorView: UIView {
         gradientLayer.colors = generateSaturationInterpolationArray(hue: hue)
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        gradientLayer.frame = bounds
+        gradientLayer.frame = frame
         
         return gradientLayer
     }
@@ -64,7 +114,7 @@ public class BrightnessSaturationColorView: UIView {
         }
         
         gradientLayer.colors = colorArray
-        gradientLayer.frame = bounds
+        gradientLayer.frame = frame
         
         return gradientLayer
     }
@@ -73,4 +123,13 @@ public class BrightnessSaturationColorView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override public func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let pointForTargetView = selector.convert(point, from: self)
+
+        if self.selector.bounds.contains(pointForTargetView) {
+            return selector.hitTest(pointForTargetView, with: event)
+        }
+        
+        return super.hitTest(point, with: event)
+    }
 }
