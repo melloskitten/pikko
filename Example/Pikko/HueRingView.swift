@@ -68,27 +68,15 @@ class HueRingView: UIView {
         
         selector?.center = CGPoint(x: position_x, y: position_y)
         updateColor(point: (selector?.center)!)
-        animateScale(panGestureRecognizer: panGestureRecognizer)
+        animate(panGestureRecognizer)
     }
     
-    private func animateScaleUp() {
-        UIView.animate(withDuration: 0.25) {
-            self.selector?.transform = CGAffineTransform(scaleX: self.scale,y: self.scale)
-        }
-    }
-    
-    private func animateScaleDown() {
-        UIView.animate(withDuration: 0.25) {
-            self.selector?.transform = CGAffineTransform(scaleX: 1,y: 1)
-        }
-    }
-    
-    private func animateScale(panGestureRecognizer: UIPanGestureRecognizer) {
+    private func animate(_ panGestureRecognizer: UIPanGestureRecognizer) {
         switch panGestureRecognizer.state {
         case .began:
-            animateScaleUp()
+            Animations.animateScale(view: selector!, byScale: scale)
         case .ended:
-            animateScaleDown()
+            Animations.animateScaleReset(view: selector!)
         default:
             break
         }

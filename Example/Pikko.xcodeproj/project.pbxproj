@@ -19,6 +19,7 @@
 		BC84127E2167B9B30043921C /* BrightnessSaturationColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */; };
 		BC8412802167B9DE0043921C /* PikkoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127F2167B9DE0043921C /* PikkoView.swift */; };
 		BCF8F1D22170DB8F003B8691 /* ColorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8F1D12170DB8F003B8691 /* ColorUtilities.swift */; };
+		BCF8F1D521750FE7003B8691 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8F1D421750FE7003B8691 /* Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSaturationColorView.swift; sourceTree = "<group>"; };
 		BC84127F2167B9DE0043921C /* PikkoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikkoView.swift; sourceTree = "<group>"; };
 		BCF8F1D12170DB8F003B8691 /* ColorUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtilities.swift; sourceTree = "<group>"; };
+		BCF8F1D421750FE7003B8691 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E60B7588F1812AFA869FEC36 /* Pikko.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pikko.podspec; path = ../Pikko.podspec; sourceTree = "<group>"; };
 		F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */,
 				BC84127F2167B9DE0043921C /* PikkoView.swift */,
 				BCF8F1D12170DB8F003B8691 /* ColorUtilities.swift */,
+				BCF8F1D421750FE7003B8691 /* Animations.swift */,
 			);
 			name = "Example for Pikko";
 			path = Pikko;
@@ -342,6 +345,7 @@
 				BC8412802167B9DE0043921C /* PikkoView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				BC84127E2167B9B30043921C /* BrightnessSaturationColorView.swift in Sources */,
+				BCF8F1D521750FE7003B8691 /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
