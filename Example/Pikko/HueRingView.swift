@@ -16,7 +16,7 @@ class HueRingView: UIView {
     private var borderWidth: CGFloat
     private var borderHeight: CGFloat
     private var selector: UIView?
-    private var hueRing: UIView?
+    private var hueRingView: UIView?
     private var scale: CGFloat
     
     init(frame: CGRect, borderWidth: CGFloat, scale: CGFloat) {
@@ -95,11 +95,11 @@ class HueRingView: UIView {
     }
     
     private func updateColor(point: CGPoint) {
-        selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: hueRing!)
+        selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: hueRingView!)
     }
     
     private func createHueRing() {
-        hueRing = UIView(frame: self.frame)
+        hueRingView = UIView(frame: self.frame)
         
         for i in 0..<255 {
             let layer = CALayer()
@@ -113,9 +113,9 @@ class HueRingView: UIView {
             layer.transform = CATransform3DMakeRotation((position*CGFloat.pi)/180.0, 0, 0, 1.0)
             layer.allowsEdgeAntialiasing = true
             
-            hueRing!.layer.addSublayer(layer)
+            hueRingView!.layer.addSublayer(layer)
         }
 
-        addSubview(hueRing!)
+        addSubview(hueRingView!)
     }
 }
