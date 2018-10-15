@@ -12,13 +12,15 @@ import UIKit
 public class BrightnessSaturationColorView: UIView {
     
     // FIXME: Make sampling rate parametric depending on size of canvas.
-    var samplingRate: CGFloat = 25.0
-    var brightnessSaturationView: UIView!
-    var brightnessLayer: CAGradientLayer?
-    var saturationLayer: CAGradientLayer?
-    var selector: UIView!
+    private var samplingRate: CGFloat = 25.0
+    private var brightnessSaturationView: UIView!
+    private var brightnessLayer: CAGradientLayer?
+    private var saturationLayer: CAGradientLayer?
+    private var selector: UIView!
+    private var scale: CGFloat
     
     init(frame: CGRect, borderWidth: CGFloat, scale: CGFloat) {
+        self.scale = scale
         super.init(frame: frame)
         createView(frame)
         createSelector(borderWidth, scale)
@@ -54,6 +56,7 @@ public class BrightnessSaturationColorView: UIView {
     }
     
     @objc func selectorPanned(_ panGestureRecognizer: UIPanGestureRecognizer) {
+        
         var location = panGestureRecognizer.location(in: self)
         
         if location.x <= 0 {
@@ -71,9 +74,20 @@ public class BrightnessSaturationColorView: UIView {
         if location.y >= frame.height {
             location.y = frame.height - 1
         }
-        
         updateColor(point: location)
         selector.center = location
+        animate(panGestureRecognizer)
+    }
+    
+    private func animate(_ panGestureRecognizer: UIPanGestureRecognizer) {
+        switch panGestureRecognizer.state {
+        case .began:
+            Animations.animateScale(view: selector!, byScale: scale)
+        case .ended:
+            Animations.animateScaleReset(view: selector!)
+        default:
+            break
+        }
     }
     
     private func updateColor(point: CGPoint) {
