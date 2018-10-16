@@ -18,6 +18,7 @@ class HueRingView: UIView {
     private var selector: UIView?
     private var hueRingView: UIView?
     private var scale: CGFloat
+    public var hueUpdateDelegate: HueUpdateDelegate?
     
     init(frame: CGRect, borderWidth: CGFloat, scale: CGFloat) {
         self.borderWidth = borderWidth
@@ -83,7 +84,13 @@ class HueRingView: UIView {
     }
     
     private func updateColor(point: CGPoint) {
-        selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: hueRingView!)
+        var hue: CGFloat = 0
+        
+        if let color = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: hueRingView!), let selector = selector {
+            selector.backgroundColor = color
+            color.getHue(&hue, saturation: nil, brightness: nil, alpha: nil)
+            hueUpdateDelegate?.didUpdateHue(hue: hue)
+        }
     }
     
     private func createHueRing() {
