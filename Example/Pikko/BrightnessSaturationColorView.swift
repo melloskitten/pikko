@@ -74,7 +74,7 @@ public class BrightnessSaturationColorView: UIView {
         if location.y >= frame.height {
             location.y = frame.height - 1
         }
-        updateColor(point: location)
+        updateSelectorColor(point: location)
         selector.center = location
         animate(panGestureRecognizer)
     }
@@ -90,7 +90,7 @@ public class BrightnessSaturationColorView: UIView {
         }
     }
     
-    private func updateColor(point: CGPoint) {
+    private func updateSelectorColor(point: CGPoint) {
         selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: brightnessSaturationView)
     }
     
@@ -145,5 +145,11 @@ public class BrightnessSaturationColorView: UIView {
         }
         
         return super.hitTest(point, with: event)
+    }
+}
+
+extension BrightnessSaturationColorView: HueUpdateDelegate {
+    func didUpdateHue(hue: CGFloat) {
+        saturationLayer?.colors = generateSaturationInterpolationArray(hue: hue)
     }
 }

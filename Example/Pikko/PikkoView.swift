@@ -17,7 +17,6 @@ class PikkoView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpColorPickerViews(frame)
-        //setUpGestureRecognizer()
     }
     
     fileprivate func setUpColorPickerViews(_ frame: CGRect) {
@@ -27,19 +26,27 @@ class PikkoView: UIView {
         let customWidth: CGFloat = sqrt(2) * (radius - borderWidth)
         let scale: CGFloat = 1.5
         
-        backgroundColor = .gray
-        
         hue = HueRingView(frame: frame, borderWidth: borderWidth, scale: scale)
         square = BrightnessSaturationColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth), borderWidth: borderWidth, scale: scale)
         
-        square!.center = hue!.center
-        
-        self.addSubview(hue!)
-        self.addSubview(square!)
+        if let hue = hue, let square = square {
+            hue.hueUpdateDelegate = self
+            square.center = hue.center
+            self.addSubview(hue)
+            self.addSubview(square)
+        }
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+}
+
+extension PikkoView: HueUpdateDelegate {
+    func didUpdateHue(hue: CGFloat) {
+        if let square = square {
+            square.didUpdateHue(hue: hue)
+        }
     }
 }
 
