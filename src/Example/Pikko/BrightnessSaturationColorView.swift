@@ -18,6 +18,7 @@ public class BrightnessSaturationColorView: UIView {
     private var saturationLayer: CAGradientLayer?
     private var selector: UIView!
     private var scale: CGFloat
+    public var delegate: PikkoDelegate?
     
     init(frame: CGRect, selectorDiameter: CGFloat, scale: CGFloat) {
         self.scale = scale
@@ -91,6 +92,9 @@ public class BrightnessSaturationColorView: UIView {
     
     private func updateSelectorColor(point: CGPoint) {
         selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: brightnessSaturationView)
+        if let color = selector.backgroundColor, let delegate = delegate {
+            delegate.writeBackColor(color: color)
+        }
     }
     
     private func generateSaturationInterpolationArray(hue: CGFloat) -> [CGColor] {

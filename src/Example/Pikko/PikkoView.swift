@@ -13,6 +13,8 @@ class PikkoView: UIView {
     
     var hue: HueRingView?
     var square: BrightnessSaturationColorView?
+    var currentColor: UIColor = .white
+    var delegate: PikkoDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,10 +35,15 @@ class PikkoView: UIView {
         
         if let hue = hue, let square = square {
             hue.hueUpdateDelegate = self
+            square.delegate = self
             square.center = hue.center
             self.addSubview(hue)
             self.addSubview(square)
         }
+    }
+    
+    public func getColor() -> UIColor {
+        return currentColor
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -48,6 +55,15 @@ extension PikkoView: HueUpdateDelegate {
     func didUpdateHue(hue: CGFloat) {
         if let square = square {
             square.didUpdateHue(hue: hue)
+        }
+    }
+}
+
+extension PikkoView: PikkoDelegate {
+    func writeBackColor(color: UIColor) {
+        if let delegate = delegate {
+            currentColor = color
+            delegate.writeBackColor(color: color)
         }
     }
 }
