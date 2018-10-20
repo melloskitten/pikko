@@ -150,6 +150,12 @@ public class BrightnessSaturationColorView: UIView {
 
 extension BrightnessSaturationColorView: HueUpdateDelegate {
     func didUpdateHue(hue: CGFloat) {
-        saturationLayer?.colors = generateSaturationInterpolationArray(hue: hue)
+        DispatchQueue.main.async {
+            self.updateSelectorColor(point: self.selector.center)
+        }
+        
+        DispatchQueue.main.async {
+            self.saturationLayer?.colors = self.generateSaturationInterpolationArray(hue: hue)
+        }
     }
 }
