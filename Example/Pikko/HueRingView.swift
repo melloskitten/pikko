@@ -16,11 +16,12 @@ class HueRingView: UIView {
     private var borderWidth: CGFloat
     private var borderHeight: CGFloat
     private var selector: UIView?
+    private var selectorDiameter: CGFloat
     private var hueRingView: UIView?
     private var scale: CGFloat
     public var hueUpdateDelegate: HueUpdateDelegate?
     
-    init(frame: CGRect, borderWidth: CGFloat, scale: CGFloat) {
+    init(frame: CGRect, borderWidth: CGFloat, selectorDiameter: CGFloat, scale: CGFloat) {
         self.borderWidth = borderWidth
         // FIXME: Currently hardcoded borderHeight.
         self.borderHeight = 5
@@ -28,6 +29,7 @@ class HueRingView: UIView {
         self.scale = scale
         self.offset_x = (frame.width-borderWidth)/2
         self.offset_y = (frame.height-borderHeight)/2
+        self.selectorDiameter = selectorDiameter
         super.init(frame: frame)
         
         createHueRing()
@@ -39,9 +41,9 @@ class HueRingView: UIView {
     }
     
     private func createSelector() {
-        selector = UIView(frame: CGRect(x: 0, y: 0, width: borderWidth * scale, height: borderWidth * scale))
+        selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorDiameter, height: selectorDiameter))
         selector?.center = CGPoint(x: (borderWidth)/2, y: offset_y)
-        selector?.layer.cornerRadius = (borderWidth * scale)/2
+        selector?.layer.cornerRadius = (selectorDiameter)/2
         selector?.isUserInteractionEnabled = true
         selector?.layer.borderWidth = 1
         selector?.layer.borderColor = UIColor.white.cgColor
