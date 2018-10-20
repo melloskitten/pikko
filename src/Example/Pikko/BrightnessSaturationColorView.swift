@@ -19,11 +19,11 @@ public class BrightnessSaturationColorView: UIView {
     private var selector: UIView!
     private var scale: CGFloat
     
-    init(frame: CGRect, borderWidth: CGFloat, scale: CGFloat) {
+    init(frame: CGRect, selectorDiameter: CGFloat, scale: CGFloat) {
         self.scale = scale
         super.init(frame: frame)
         createView(frame)
-        createSelector(borderWidth, scale)
+        createSelector(selectorDiameter, scale)
     }
     
     private func createView(_ frame: CGRect) {
@@ -36,11 +36,10 @@ public class BrightnessSaturationColorView: UIView {
         addSubview(brightnessSaturationView)
     }
     
-    private func createSelector(_ borderWidth: CGFloat, _ scale: CGFloat) {
-        let selectorWidth = borderWidth * scale
-        selector = UIView(frame: CGRect(x: 0-selectorWidth/2, y: 0-selectorWidth/2, width: selectorWidth, height: selectorWidth))
+    private func createSelector(_ selectorDiameter: CGFloat, _ scale: CGFloat) {
+        selector = UIView(frame: CGRect(x: 0-selectorDiameter/2, y: 0-selectorDiameter/2, width: selectorDiameter, height: selectorDiameter))
         selector.backgroundColor = .white
-        selector.layer.cornerRadius = selectorWidth/2
+        selector.layer.cornerRadius = selectorDiameter/2
         selector.layer.borderColor = UIColor.white.cgColor
         selector.layer.borderWidth = 1
         selector.isUserInteractionEnabled = true
@@ -150,6 +149,12 @@ public class BrightnessSaturationColorView: UIView {
 
 extension BrightnessSaturationColorView: HueUpdateDelegate {
     func didUpdateHue(hue: CGFloat) {
-        saturationLayer?.colors = generateSaturationInterpolationArray(hue: hue)
+        DispatchQueue.main.async {
+            self.updateSelectorColor(point: self.selector.center)
+        }
+        
+        DispatchQueue.main.async {
+            self.saturationLayer?.colors = self.generateSaturationInterpolationArray(hue: hue)
+        }
     }
 }

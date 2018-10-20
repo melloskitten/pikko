@@ -22,12 +22,14 @@ class PikkoView: UIView {
     fileprivate func setUpColorPickerViews(_ frame: CGRect) {
         // TODO: Make borderwidth an adjustable parameter.
         let borderWidth: CGFloat = 30.0
+        let selectorDiameter: CGFloat = borderWidth * 1.5
         let radius = frame.width/2
-        let customWidth: CGFloat = sqrt(2) * (radius - borderWidth)
+        // FIXME: Explain magic constant that controls "margin" of the square
+        let customWidth: CGFloat = sqrt(2) * (radius - borderWidth) * 0.85
         let scale: CGFloat = 1.5
         
-        hue = HueRingView(frame: frame, borderWidth: borderWidth, scale: scale)
-        square = BrightnessSaturationColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth), borderWidth: borderWidth, scale: scale)
+        hue = HueRingView(frame: frame, borderWidth: borderWidth, selectorDiameter: selectorDiameter, scale: scale)
+        square = BrightnessSaturationColorView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customWidth), selectorDiameter: selectorDiameter, scale: 2)
         
         if let hue = hue, let square = square {
             hue.hueUpdateDelegate = self
