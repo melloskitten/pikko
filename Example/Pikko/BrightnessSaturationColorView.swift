@@ -37,13 +37,14 @@ public class BrightnessSaturationColorView: UIView {
     }
     
     private func createSelector(_ borderWidth: CGFloat, _ scale: CGFloat) {
-        let selectorWidth = borderWidth * scale
+        let selectorWidth = borderWidth
         selector = UIView(frame: CGRect(x: 0-selectorWidth/2, y: 0-selectorWidth/2, width: selectorWidth, height: selectorWidth))
         selector.backgroundColor = .white
         selector.layer.cornerRadius = selectorWidth/2
         selector.layer.borderColor = UIColor.white.cgColor
         selector.layer.borderWidth = 1
         selector.isUserInteractionEnabled = true
+        selector.layer.zPosition = 100
         
         setUpGestureRecognizer()
         addSubview(selector)
