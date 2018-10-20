@@ -29,6 +29,7 @@ pod 'Pikko'
 ## Authors
 
 Sandra, melloskitten@googlemail.com
+
 Johannes, mail@johannesrohwer.com
 
 ## License
