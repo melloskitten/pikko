@@ -47,7 +47,6 @@ class HueRingView: UIView {
         selector?.isUserInteractionEnabled = true
         selector?.layer.borderWidth = 1
         selector?.layer.borderColor = UIColor.white.cgColor
-        selector?.layer.zPosition = 100
         updateColor(point: (selector?.center)!)
         setUpGestureRecognizer()
         
