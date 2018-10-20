@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		0A606BC573F3758562E9ACDF /* Pods_Pikko_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		161152AAD75AB3B243E85632 /* Pods-Pikko_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4040348A38E7559D523615F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5068D7A093398C4632900AD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Pikko_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pikko_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				E60B7588F1812AFA869FEC36 /* Pikko.podspec */,
-				4040348A38E7559D523615F3 /* README.md */,
 				5068D7A093398C4632900AD1 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
