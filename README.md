@@ -1,9 +1,17 @@
-# Pikko
+# Pikko - iOS color picker made with ❤️ 
 
-[![CI Status](https://img.shields.io/travis/Sandra/Pikko.svg?style=flat)](https://travis-ci.org/Sandra/Pikko)
+<!--- [![CI Status](https://img.shields.io/travis/Sandra/Pikko.svg?style=flat)](https://travis-ci.org/Sandra/Pikko)
 [![Version](https://img.shields.io/cocoapods/v/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
 [![License](https://img.shields.io/cocoapods/l/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
-[![Platform](https://img.shields.io/cocoapods/p/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
+[![Platform](https://img.shields.io/cocoapods/p/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko) --->
+
+![Demo of pikko color picker](doc/demo.gif)
+
+Created due to the lack of pretty & functionally useful color picker libraries for iOS. 
+
+Feel free to use, modify and improve. ✌️ 
+
+Still being
 
 ## Example
 
