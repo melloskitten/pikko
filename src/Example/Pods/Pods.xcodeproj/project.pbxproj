@@ -22,7 +22,6 @@
 		5B7760123083C42C2794C2EFCFE4326A /* Pods-Pikko_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 948D47A548B8213BED36EA9A70B322F1 /* Pods-Pikko_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C74CF048A936A045BE01212EACBB978 /* Pikko-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 760429D5B5F68DF8D188210CBD6E36E5 /* Pikko-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB50943CBFC17D18C13BC9A76CF0E013 /* Pods-Pikko_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7608B8C135BEFEF68467737903FBD3 /* Pods-Pikko_Example-dummy.m */; };
-		BCD12037215173D40033CDEF /* PLACEHOLDER.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD12036215173D40033CDEF /* PLACEHOLDER.swift */; };
 		E01DF94EAA2270604E26E616BB1B690C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +72,6 @@
 		A6B6047D00C445E851AC07033D21E3B6 /* Pods-Pikko_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A79970E5A361E8C39DD0A43A40EB1CEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B871E16BD1A693314755D390920DBB5E /* Pikko-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pikko-prefix.pch"; sourceTree = "<group>"; };
-		BCD12036215173D40033CDEF /* PLACEHOLDER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLACEHOLDER.swift; sourceTree = "<group>"; };
 		C0557055C3D12D190F61D21193B7ADB4 /* Pods-Pikko_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pikko_Tests-dummy.m"; sourceTree = "<group>"; };
 		DAC69CC508CBC48DC5E293F480D76E05 /* Pods-Pikko_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Tests-resources.sh"; sourceTree = "<group>"; };
 		DC2BEB458473C2CFB3B8E5BDE46BFA6A /* Pikko.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pikko.xcconfig; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 				2A53F757222C01C400ED3CBC /* PikkoView.swift */,
 				7A37BFCB6B09343BF56E7F828968C266 /* Pod */,
 				157E86F369606F3394E25F010CB05775 /* Support Files */,
-				BCD12036215173D40033CDEF /* PLACEHOLDER.swift */,
 			);
 			name = Pikko;
 			path = ../..;
@@ -393,7 +390,6 @@
 				2A53F762222C01C500ED3CBC /* BrightnessSaturationColorView.swift in Sources */,
 				2A53F760222C01C500ED3CBC /* HueUpdateDelegate.swift in Sources */,
 				2A53F764222C01C500ED3CBC /* PikkoDelegate.swift in Sources */,
-				BCD12037215173D40033CDEF /* PLACEHOLDER.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
