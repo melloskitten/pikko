@@ -10,6 +10,13 @@
 		132B076B357400C780885AF61BE6B16F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		1F8D165FAF8E467C50EE2AB0CE6AB773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		286556D1FFBA4B4583D074CF3F9C0D1D /* Pods-Pikko_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D47C9C472E0102F50D632FB86D46221 /* Pods-Pikko_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A53F75E222C01C500ED3CBC /* PikkoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F757222C01C400ED3CBC /* PikkoView.swift */; };
+		2A53F75F222C01C500ED3CBC /* ColorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F758222C01C400ED3CBC /* ColorUtilities.swift */; };
+		2A53F760222C01C500ED3CBC /* HueUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F759222C01C400ED3CBC /* HueUpdateDelegate.swift */; };
+		2A53F761222C01C500ED3CBC /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F75A222C01C400ED3CBC /* Animations.swift */; };
+		2A53F762222C01C500ED3CBC /* BrightnessSaturationColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F75B222C01C400ED3CBC /* BrightnessSaturationColorView.swift */; };
+		2A53F763222C01C500ED3CBC /* HueRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F75C222C01C400ED3CBC /* HueRingView.swift */; };
+		2A53F764222C01C500ED3CBC /* PikkoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53F75D222C01C500ED3CBC /* PikkoDelegate.swift */; };
 		314F06869B90DAD8719559F908AABB72 /* Pods-Pikko_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0557055C3D12D190F61D21193B7ADB4 /* Pods-Pikko_Tests-dummy.m */; };
 		3A33430C93341EF086CE251835E943C1 /* Pikko-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A8E44D73DBCF7DE59DF3E751FF0A9 /* Pikko-dummy.m */; };
 		5B7760123083C42C2794C2EFCFE4326A /* Pods-Pikko_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 948D47A548B8213BED36EA9A70B322F1 /* Pods-Pikko_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +46,13 @@
 /* Begin PBXFileReference section */
 		1B7608B8C135BEFEF68467737903FBD3 /* Pods-Pikko_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pikko_Example-dummy.m"; sourceTree = "<group>"; };
 		2A265E4456F733A5B4E2449E8EEC54EC /* Pods-Pikko_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Example-resources.sh"; sourceTree = "<group>"; };
+		2A53F757222C01C400ED3CBC /* PikkoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PikkoView.swift; path = Pikko/Classes/PikkoView.swift; sourceTree = "<group>"; };
+		2A53F758222C01C400ED3CBC /* ColorUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorUtilities.swift; path = Pikko/Classes/ColorUtilities.swift; sourceTree = "<group>"; };
+		2A53F759222C01C400ED3CBC /* HueUpdateDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HueUpdateDelegate.swift; path = Pikko/Classes/HueUpdateDelegate.swift; sourceTree = "<group>"; };
+		2A53F75A222C01C400ED3CBC /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animations.swift; path = Pikko/Classes/Animations.swift; sourceTree = "<group>"; };
+		2A53F75B222C01C400ED3CBC /* BrightnessSaturationColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrightnessSaturationColorView.swift; path = Pikko/Classes/BrightnessSaturationColorView.swift; sourceTree = "<group>"; };
+		2A53F75C222C01C400ED3CBC /* HueRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HueRingView.swift; path = Pikko/Classes/HueRingView.swift; sourceTree = "<group>"; };
+		2A53F75D222C01C500ED3CBC /* PikkoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PikkoDelegate.swift; path = Pikko/Classes/PikkoDelegate.swift; sourceTree = "<group>"; };
 		2C6320F9B888B8A73F8EDDCBE33A551C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2D47C9C472E0102F50D632FB86D46221 /* Pods-Pikko_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pikko_Example-umbrella.h"; sourceTree = "<group>"; };
 		3250A97052CBE2F9E650CB516F59EA87 /* Pods-Pikko_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +224,13 @@
 		CCCBA42F10A6C970F314E6ECAAEC7D9B /* Pikko */ = {
 			isa = PBXGroup;
 			children = (
+				2A53F75A222C01C400ED3CBC /* Animations.swift */,
+				2A53F75B222C01C400ED3CBC /* BrightnessSaturationColorView.swift */,
+				2A53F758222C01C400ED3CBC /* ColorUtilities.swift */,
+				2A53F75C222C01C400ED3CBC /* HueRingView.swift */,
+				2A53F759222C01C400ED3CBC /* HueUpdateDelegate.swift */,
+				2A53F75D222C01C500ED3CBC /* PikkoDelegate.swift */,
+				2A53F757222C01C400ED3CBC /* PikkoView.swift */,
 				7A37BFCB6B09343BF56E7F828968C266 /* Pod */,
 				157E86F369606F3394E25F010CB05775 /* Support Files */,
 				BCD12036215173D40033CDEF /* PLACEHOLDER.swift */,
@@ -365,6 +386,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A33430C93341EF086CE251835E943C1 /* Pikko-dummy.m in Sources */,
+				2A53F763222C01C500ED3CBC /* HueRingView.swift in Sources */,
+				2A53F75E222C01C500ED3CBC /* PikkoView.swift in Sources */,
+				2A53F761222C01C500ED3CBC /* Animations.swift in Sources */,
+				2A53F75F222C01C500ED3CBC /* ColorUtilities.swift in Sources */,
+				2A53F762222C01C500ED3CBC /* BrightnessSaturationColorView.swift in Sources */,
+				2A53F760222C01C500ED3CBC /* HueUpdateDelegate.swift in Sources */,
+				2A53F764222C01C500ED3CBC /* PikkoDelegate.swift in Sources */,
 				BCD12037215173D40033CDEF /* PLACEHOLDER.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

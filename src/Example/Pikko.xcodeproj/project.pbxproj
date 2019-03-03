@@ -15,13 +15,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B54ABC63D6EA6055AF44F281 /* Pods_Pikko_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */; };
-		BC84127C2167B9710043921C /* HueRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127B2167B9710043921C /* HueRingView.swift */; };
-		BC84127E2167B9B30043921C /* BrightnessSaturationColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */; };
-		BC8412802167B9DE0043921C /* PikkoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84127F2167B9DE0043921C /* PikkoView.swift */; };
-		BC98CF7821767CA6009A0AC5 /* HueUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC98CF7721767CA6009A0AC5 /* HueUpdateDelegate.swift */; };
-		BCF8F1D22170DB8F003B8691 /* ColorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8F1D12170DB8F003B8691 /* ColorUtilities.swift */; };
-		BCF8F1D521750FE7003B8691 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8F1D421750FE7003B8691 /* Animations.swift */; };
-		BCF9288E217BBA3100B61AB7 /* PikkoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF9288D217BBA3100B61AB7 /* PikkoDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +42,6 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8AE53B96F1E0760B875A8BF3 /* Pods_Pikko_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC84127B2167B9710043921C /* HueRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRingView.swift; sourceTree = "<group>"; };
-		BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSaturationColorView.swift; sourceTree = "<group>"; };
-		BC84127F2167B9DE0043921C /* PikkoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikkoView.swift; sourceTree = "<group>"; };
-		BC98CF7721767CA6009A0AC5 /* HueUpdateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueUpdateDelegate.swift; sourceTree = "<group>"; };
-		BCF8F1D12170DB8F003B8691 /* ColorUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtilities.swift; sourceTree = "<group>"; };
-		BCF8F1D421750FE7003B8691 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
-		BCF9288D217BBA3100B61AB7 /* PikkoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PikkoDelegate.swift; sourceTree = "<group>"; };
 		D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E60B7588F1812AFA869FEC36 /* Pikko.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pikko.podspec; path = ../Pikko.podspec; sourceTree = "<group>"; };
 		F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikko_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,13 +107,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				BC84127B2167B9710043921C /* HueRingView.swift */,
-				BCF9288D217BBA3100B61AB7 /* PikkoDelegate.swift */,
-				BC84127D2167B9B30043921C /* BrightnessSaturationColorView.swift */,
-				BC84127F2167B9DE0043921C /* PikkoView.swift */,
-				BCF8F1D12170DB8F003B8691 /* ColorUtilities.swift */,
-				BCF8F1D421750FE7003B8691 /* Animations.swift */,
-				BC98CF7721767CA6009A0AC5 /* HueUpdateDelegate.swift */,
 			);
 			name = "Example for Pikko";
 			path = Pikko;
@@ -231,12 +210,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 45E39Y8V9N;
+						DevelopmentTeam = MVY877MQV7;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 45E39Y8V9N;
+						DevelopmentTeam = MVY877MQV7;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -343,15 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF8F1D22170DB8F003B8691 /* ColorUtilities.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				BC84127C2167B9710043921C /* HueRingView.swift in Sources */,
-				BC98CF7821767CA6009A0AC5 /* HueUpdateDelegate.swift in Sources */,
-				BC8412802167B9DE0043921C /* PikkoView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				BC84127E2167B9B30043921C /* BrightnessSaturationColorView.swift in Sources */,
-				BCF9288E217BBA3100B61AB7 /* PikkoDelegate.swift in Sources */,
-				BCF8F1D521750FE7003B8691 /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +469,7 @@
 			baseConfigurationReference = F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 45E39Y8V9N;
+				DEVELOPMENT_TEAM = MVY877MQV7;
 				INFOPLIST_FILE = Pikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -513,7 +485,7 @@
 			baseConfigurationReference = F3468ECFB9902681A4562C53 /* Pods-Pikko_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 45E39Y8V9N;
+				DEVELOPMENT_TEAM = MVY877MQV7;
 				INFOPLIST_FILE = Pikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -528,7 +500,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 45E39Y8V9N;
+				DEVELOPMENT_TEAM = MVY877MQV7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,7 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 161152AAD75AB3B243E85632 /* Pods-Pikko_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 45E39Y8V9N;
+				DEVELOPMENT_TEAM = MVY877MQV7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

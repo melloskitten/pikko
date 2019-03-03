@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-class PikkoView: UIView {
+public class PikkoView: UIView {
     
     var hue: HueRingView?
     var square: BrightnessSaturationColorView?
     var currentColor: UIColor = .white
     var delegate: PikkoDelegate?
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setUpColorPickerViews(frame)
     }
@@ -60,7 +60,7 @@ extension PikkoView: HueUpdateDelegate {
 }
 
 extension PikkoView: PikkoDelegate {
-    func writeBackColor(color: UIColor) {
+    public func writeBackColor(color: UIColor) {
         if let delegate = delegate {
             currentColor = color
             delegate.writeBackColor(color: color)
