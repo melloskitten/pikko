@@ -14,7 +14,7 @@ public class PikkoView: UIView {
     var hue: HueRingView?
     var square: BrightnessSaturationColorView?
     var currentColor: UIColor = .white
-    var delegate: PikkoDelegate?
+    public var delegate: PikkoDelegate?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
