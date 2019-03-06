@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor(red: 0.1176, green: 0.1176, blue: 0.1176, alpha: 1.0) 
         
         // Initialize a new instance of a PikkoView.
-        let pikko = PikkoView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        let pikko = PikkoView(dimension: 300)
         
         // Set the PikkoDelegate to get notified on new color changes.
         pikko.delegate = self
