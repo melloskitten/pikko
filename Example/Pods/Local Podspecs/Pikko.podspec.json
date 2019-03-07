@@ -1,18 +1,20 @@
 {
   "name": "Pikko",
   "version": "0.1.0",
-  "summary": "A short description of Pikko.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Sandra/Pikko",
+  "summary": "pikko - iOS color picker made with ❤️",
+  "swift_version": "4.0",
+  "description": "Created due to the lack of pretty & functionally useful color picker libraries for iOS. Feel free to use, modify and improve. ✌️",
+  "homepage": "https://github.com/melloskitten/pikko/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Sandra": "sandra.grujovic@tum.de"
+    "Sandra": "sandra.grujovic@tum.de",
+    "Johannes": "mail@johannesrohwer.com"
   },
   "source": {
-    "git": "https://github.com/Sandra/Pikko.git",
+    "git": "https://github.com/melloskitten/pikko.git",
     "tag": "0.1.0"
   },
   "platforms": {

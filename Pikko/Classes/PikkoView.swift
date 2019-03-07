@@ -14,9 +14,21 @@ public class PikkoView: UIView {
     var hue: HueRingView?
     var square: BrightnessSaturationColorView?
     var currentColor: UIColor = .white
+    
+    /// The PikkoDelegate that is called whenever the color is updated.
     public var delegate: PikkoDelegate?
     
-    public override init(frame: CGRect) {
+    /// - Note: Should never be called.
+    private override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    /// Initializes a new PikkoView.
+    ///
+    /// - Parameter
+    ///     - dimension: width and heigth of the new PikkoView.
+    public init(dimension: Int) {
+        let frame = CGRect(x: 0, y: 0, width: dimension, height: dimension)
         super.init(frame: frame)
         setUpColorPickerViews(frame)
     }
