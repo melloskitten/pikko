@@ -149,6 +149,24 @@ public class BrightnessSaturationColorView: UIView {
         
         return super.hitTest(point, with: event)
     }
+    
+    /// Sets the brightness and saturation selector to a certain color.
+    ///
+    /// - Parameter color: UIColor for the selector position.
+    func setColor(_ color: UIColor) {
+        let saturation = color.saturation
+        let brightness = color.brightness
+        
+        let width = self.frame.width
+        let height = self.frame.height
+        
+        let position_x = width * saturation
+        let position_y = height - (height * brightness)
+        let newCenter = CGPoint(x: position_x, y: position_y)
+
+        selector.center = newCenter
+        updateSelectorColor(point: newCenter)
+    }
 }
 
 extension BrightnessSaturationColorView: HueUpdateDelegate {

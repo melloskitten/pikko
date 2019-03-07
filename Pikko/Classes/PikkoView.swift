@@ -18,6 +18,8 @@ public class PikkoView: UIView {
     /// The PikkoDelegate that is called whenever the color is updated.
     public var delegate: PikkoDelegate?
     
+    // MARK: - Initializer.
+    
     /// - Note: Should never be called.
     private override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,6 +34,12 @@ public class PikkoView: UIView {
         super.init(frame: frame)
         setUpColorPickerViews(frame)
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    // MARK: - Helper methods.
     
     fileprivate func setUpColorPickerViews(_ frame: CGRect) {
         // TODO: Make borderwidth an adjustable parameter.
@@ -54,12 +62,18 @@ public class PikkoView: UIView {
         }
     }
     
+    /// Gets the current color that is selected on the color picker.
+    ///
+    /// - Returns: the current color.
     public func getColor() -> UIColor {
         return currentColor
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    
+    public func setColor(_ color: UIColor) {
+        if let hue = hue, let square = square {
+            hue.setColor(color)
+            square.setColor(color)
+        }
     }
 }
 

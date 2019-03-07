@@ -115,4 +115,19 @@ class HueRingView: UIView {
 
         addSubview(hueRingView!)
     }
+    
+    
+    /// Sets the hue selector to a certain color.
+    ///
+    /// - Parameter color: UIColor for the selector position.
+    func setColor(_ color: UIColor) {
+        let angle = color.hue
+        
+        let position_y = sin(1.0 * angle * 2 * CGFloat.pi) * radius + center.x
+        let position_x = cos(1.0 * angle * 2 * CGFloat.pi) * radius + center.y
+        let newCenter = CGPoint(x: position_x, y: position_y)
+        
+        selector?.center = newCenter
+        updateColor(point: newCenter)
+    }
 }
