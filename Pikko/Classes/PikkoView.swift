@@ -25,7 +25,8 @@ public class PikkoView: UIView {
     
     /// Initializes a new PikkoView.
     ///
-    /// - Parameter dimension: width and heigth of the new PikkoView.
+    /// - Parameter
+    ///     - dimension: width and heigth of the new PikkoView.
     public init(dimension: Int) {
         let frame = CGRect(x: 0, y: 0, width: dimension, height: dimension)
         super.init(frame: frame)
