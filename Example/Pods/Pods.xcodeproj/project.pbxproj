@@ -10,7 +10,6 @@
 		0D9F0DBE00D0F7518A29D4B4C613BF6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		133445BF887808A904D800817688CD16 /* Pikko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B75A4E8BE3C3DC20349D0BE5C36D1 /* Pikko.swift */; };
 		1D711AD641D7F2A9CF16C7942A25ACCF /* ColorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FECDB8DD7D3C8C1A9ECA4DF8FBA7A0 /* ColorUtilities.swift */; };
-		505DB4268D9BC88E9ECB871CB4AE016B /* PLACEHOLDER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99AA7796D6B4BC2C39981D783BE530 /* PLACEHOLDER.swift */; };
 		5494D99FE13C661A04829DBB9D016998 /* PikkoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BDAA958283923EA94D9E2A3C78B77 /* PikkoDelegate.swift */; };
 		5ADA6F53292F3423895A8AB6F79B8754 /* HueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33172B361409C019B3588A560C9835 /* HueDelegate.swift */; };
 		6A347DC47C430BFB503D9AF985A2841A /* Pikko-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 496AE98828F0B7B64A65BFA26F15ED13 /* Pikko-dummy.m */; };
@@ -50,7 +49,6 @@
 		21DE18B90A6EA95D4D9882A3FF4AA009 /* Pikko.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Pikko.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		27FECDB8DD7D3C8C1A9ECA4DF8FBA7A0 /* ColorUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorUtilities.swift; sourceTree = "<group>"; };
 		2A265E4456F733A5B4E2449E8EEC54EC /* Pods-Pikko_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Example-resources.sh"; sourceTree = "<group>"; };
-		2A99AA7796D6B4BC2C39981D783BE530 /* PLACEHOLDER.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PLACEHOLDER.swift; sourceTree = "<group>"; };
 		2D47C9C472E0102F50D632FB86D46221 /* Pods-Pikko_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pikko_Example-umbrella.h"; sourceTree = "<group>"; };
 		3250A97052CBE2F9E650CB516F59EA87 /* Pods-Pikko_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Example.release.xcconfig"; sourceTree = "<group>"; };
 		39768421F631412B792E702C7170E160 /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 				117B75A4E8BE3C3DC20349D0BE5C36D1 /* Pikko.swift */,
 				FCEAABC1EA5726012003C58F09F9CF07 /* BrightnessSaturationView.swift */,
 				5D6190E4DA34B9CCFD8FB6E8B0696277 /* HueView.swift */,
-				2A99AA7796D6B4BC2C39981D783BE530 /* PLACEHOLDER.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -427,7 +424,6 @@
 				5494D99FE13C661A04829DBB9D016998 /* PikkoDelegate.swift in Sources */,
 				BCEDD5CA223193FD00149597 /* UIColor+HSBAComponents.swift in Sources */,
 				133445BF887808A904D800817688CD16 /* Pikko.swift in Sources */,
-				505DB4268D9BC88E9ECB871CB4AE016B /* PLACEHOLDER.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
