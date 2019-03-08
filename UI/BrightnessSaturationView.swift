@@ -117,7 +117,7 @@ internal class BrightnessSaturationView: UIView {
             location.x = 0
         }
         
-        if location.x >= frame.width {
+        if location.x >= frame.width - 1 {
             location.x = frame.width - 1
         }
         
@@ -125,7 +125,7 @@ internal class BrightnessSaturationView: UIView {
             location.y = 0
         }
         
-        if location.y >= frame.height {
+        if location.y >= frame.height - 1 {
             location.y = frame.height - 1
         }
         updateSelectorColor(point: location)
@@ -202,7 +202,7 @@ internal class BrightnessSaturationView: UIView {
     private func createBrightnessLayer() -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         var colorArray = [CGColor]()
-        
+
         for i in 0..<Int(samplingRate) {
             let interpolationValue = CGFloat(CGFloat(i) / samplingRate)
             let color = UIColor(hue: 0, saturation: 0, brightness: 0, alpha: interpolationValue)
