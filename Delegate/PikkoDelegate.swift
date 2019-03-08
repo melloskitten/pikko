@@ -1,14 +1,14 @@
 //
 //  PikkoDelegate.swift
-//  Pikko_Example
+//  Pikko
 //
-//  Created by Sandra Grujovic on 20.10.18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Sandra & Johannes.
 //
 
 import Foundation
 import UIKit
 
+/// Delegate which propagates color changes of the colorpicker to its delegate.
 public protocol PikkoDelegate {
     func writeBackColor(color: UIColor)
 }

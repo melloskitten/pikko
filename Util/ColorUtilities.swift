@@ -1,22 +1,31 @@
 //
 //  ColorUtilities.swift
-//  Pikko_Example
+//  Pikko
 //
-//  Created by Sandra Grujovic on 12.10.18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Sandra & Johannes.
 //
 
 import Foundation
 import UIKit
 
-class ColorUtilities {
+/// Convenience class for UIColor assessment on UIViews.
+internal class ColorUtilities {
     
-    // TAKEN FROM: https://stackoverflow.com/a/27746860/7217195
-    static func getPixelColorAtPoint(point:CGPoint, sourceView: UIView) -> UIColor? {
+    /// Convenience method for getting the color of a specific CGpoint in a particular UIView.
+    /// - Note: This part is taken from [Stackoverflow](https://stackoverflow.com/a/27746860/7217195).
+    static func getPixelColorAtPoint(point: CGPoint, sourceView: UIView) -> UIColor? {
+        
         let pixel = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: 4)
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
-        let context = CGContext(data: pixel, width: 1, height: 1, bitsPerComponent: 8, bytesPerRow: 4, space: colorSpace, bitmapInfo: bitmapInfo.rawValue)
+        let context = CGContext(data: pixel,
+                                width: 1,
+                                height: 1,
+                                bitsPerComponent: 8,
+                                bytesPerRow: 4,
+                                space: colorSpace,
+                                bitmapInfo: bitmapInfo.rawValue)
+        
         var color: UIColor? = nil
         
         if let context = context {

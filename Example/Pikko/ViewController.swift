@@ -11,12 +11,12 @@ import Pikko
 
 /// Example UIViewController that demonstrates Pikko.
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         view.backgroundColor = UIColor(red: 0.1176, green: 0.1176, blue: 0.1176, alpha: 1.0) 
         
         // Initialize a new instance of a PikkoView.
-        let pikko = PikkoView(dimension: 300)
+        let pikko = Pikko(dimension: 300)
         
         // Set the PikkoDelegate to get notified on new color changes.
         pikko.delegate = self
@@ -24,6 +24,10 @@ class ViewController: UIViewController {
         // Set PikkoView center and add it to the main view.
         pikko.center = self.view.center
         self.view.addSubview(pikko)
+        
+        // let color = UIColor.red
+        
+        // pikko.setColor(color)
     }
 }
 
