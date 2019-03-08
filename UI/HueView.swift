@@ -1,14 +1,13 @@
 //
-//  HueRingView.swift
-//  Pikko_Example
+//  HueView.swift
+//  Pikko
 //
-//  Created by Sandra Grujovic on 05.10.18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Sandra & Johannes.
 //
 
 import UIKit
 
-class HueRingView: UIView {
+internal class HueView: UIView {
     
     private var offset_x: CGFloat = 0.0
     private var offset_y: CGFloat = 0.0
@@ -19,7 +18,7 @@ class HueRingView: UIView {
     private var selectorDiameter: CGFloat
     private var hueRingView: UIView?
     private var scale: CGFloat
-    public var hueUpdateDelegate: HueUpdateDelegate?
+    public var delegate: HueDelegate?
     
     init(frame: CGRect, borderWidth: CGFloat, selectorDiameter: CGFloat, scale: CGFloat) {
         self.borderWidth = borderWidth
@@ -91,7 +90,7 @@ class HueRingView: UIView {
         if let color = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: hueRingView!), let selector = selector {
             selector.backgroundColor = color
             color.getHue(&hue, saturation: nil, brightness: nil, alpha: nil)
-            hueUpdateDelegate?.didUpdateHue(hue: hue)
+            delegate?.didUpdateHue(hue: hue)
         }
     }
     

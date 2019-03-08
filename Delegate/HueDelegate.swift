@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-protocol HueUpdateDelegate {
+protocol HueDelegate {
     func didUpdateHue(hue: CGFloat)
 }

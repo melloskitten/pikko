@@ -1,64 +1,118 @@
 //
-//  SquareColorView.swift
-//  Pikko_Example
+//  BrightnessSaturationView.swift
+//  Pikko
 //
-//  Created by Sandra Grujovic on 05.10.18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Sandra & Johannes.
 //
 
 import Foundation
 import UIKit
 
-public class BrightnessSaturationColorView: UIView {
+/// Square view representing brightness and saturation.
+internal class BrightnessSaturationView: UIView {
     
-    // FIXME: Make sampling rate parametric depending on size of canvas.
+    // MARK: - Private attributes.
+    
+    /// Sampling rate for the 'steps' between the saturation / brightness values in terms of
+    /// interpolation.
+    /// - TODO: Make sampling rate parametric depending on size of canvas.
     private var samplingRate: CGFloat = 25.0
-    private var brightnessSaturationView: UIView!
-    private var brightnessLayer: CAGradientLayer?
-    private var saturationLayer: CAGradientLayer?
-    private var selector: UIView!
-    private var scale: CGFloat
-    public var delegate: PikkoDelegate?
     
-    init(frame: CGRect, selectorDiameter: CGFloat, scale: CGFloat) {
+    /// Wrapper View holding the square UIView.
+    private var brightnessSaturationView: UIView!
+    
+    /// Gradient layer for brightness transition (white to black).
+    private var brightnessLayer: CAGradientLayer?
+    
+    /// Gradient layer for saturation transition (desaturated to saturated color).
+    private var saturationLayer: CAGradientLayer?
+    
+    /// The circular UI control that can be dragged around.
+    private var selector: UIView!
+    
+    /// The scale at which the selector enlargens when the user clicks on it and holds it.
+    private var scale: CGFloat
+    
+    // MARK: - Public attributes.
+    
+    /// Delegate method for writing back changes in the color selection.
+    internal var delegate: PikkoDelegate?
+    
+    // MARK: - Initializer.
+    
+    /// Initializer for BrightnessSaturationView.
+    ///
+    /// - Parameters:
+    ///   - frame: the frame of the BrightnessSaturationView.
+    ///   - selectorDiameter: the selector diameter.
+    ///   - scale: the scale at which the selector should zoom in/zoom out when the user holds it.
+    internal init(frame: CGRect, selectorDiameter: CGFloat, scale: CGFloat) {
         self.scale = scale
         super.init(frame: frame)
         createView(frame)
         createSelector(selectorDiameter, scale)
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    /// Creates all view based components including the saturation and brightness gradient layers.
+    ///
+    /// - Parameter
+    ///     - frame: the frame of the BrightnessSaturationView.
     private func createView(_ frame: CGRect) {
-        saturationLayer = createSaturationLayer(hue: 0.0)
-        brightnessLayer = createBrightnessLayer()
         brightnessSaturationView = UIView(frame: frame)
         
+        // Create the layers.
+        saturationLayer = createSaturationLayer(hue: 0.0)
+        brightnessLayer = createBrightnessLayer()
+        
+        // Add to the wrapper view and then append to the UIView of the BrightnessSaturationView.
         brightnessSaturationView.layer.addSublayer(saturationLayer!)
         brightnessSaturationView.layer.addSublayer(brightnessLayer!)
+        
         addSubview(brightnessSaturationView)
     }
     
+    
+    /// Creates the selector which can be dragged around by the user.
+    ///
+    /// - Parameters:
+    ///   - selectorDiameter: the selector diameter.
+    ///   - scale: the scale at which the selector should zoom in/zoom out when the user holds it.
     private func createSelector(_ selectorDiameter: CGFloat, _ scale: CGFloat) {
-        selector = UIView(frame: CGRect(x: 0-selectorDiameter/2, y: 0-selectorDiameter/2, width: selectorDiameter, height: selectorDiameter))
+        
+        selector = UIView(frame: CGRect(x: 0-selectorDiameter/2,
+                                        y: 0-selectorDiameter/2,
+                                        width: selectorDiameter,
+                                        height: selectorDiameter))
+        
         selector.backgroundColor = .white
         selector.layer.cornerRadius = selectorDiameter/2
         selector.layer.borderColor = UIColor.white.cgColor
         selector.layer.borderWidth = 1
         selector.isUserInteractionEnabled = true
         
-        setUpGestureRecognizer()
+        setUpSelectorGestureRecognizer()
         addSubview(selector)
     }
     
-    private func setUpGestureRecognizer() {
+    /// Creates and adds a longpress gesture recognizer to the selector.
+    private func setUpSelectorGestureRecognizer() {
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(selectorPanned(_:)))
         longPressGestureRecognizer.minimumPressDuration = 0.0
         selector?.addGestureRecognizer(longPressGestureRecognizer)
     }
     
-    @objc func selectorPanned(_ panGestureRecognizer: UIPanGestureRecognizer) {
+    /// Handles the panning of the selector and prohibits it to leave the frame of the
+    /// BrightnessSaturationView.
+    @objc func selectorPanned(_ gestureRecognizer: UILongPressGestureRecognizer) {
         
-        var location = panGestureRecognizer.location(in: self)
+        var location = gestureRecognizer.location(in: self)
         
+        // Check whether the user is about to scroll outside of the frame, if the frame is left
+        // stop the movement in that particular direction.
         if location.x <= 0 {
             location.x = 0
         }
@@ -76,11 +130,13 @@ public class BrightnessSaturationColorView: UIView {
         }
         updateSelectorColor(point: location)
         selector.center = location
-        animate(panGestureRecognizer)
+        animate(gestureRecognizer)
     }
     
-    private func animate(_ panGestureRecognizer: UIPanGestureRecognizer) {
-        switch panGestureRecognizer.state {
+    /// Animates the selector based on the current state of the gesture. Enlargens the
+    /// selector when held and shrinks it after it has been released.
+    private func animate(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        switch gestureRecognizer.state {
         case .began:
             Animations.animateScale(view: selector!, byScale: scale)
         case .ended:
@@ -90,6 +146,10 @@ public class BrightnessSaturationColorView: UIView {
         }
     }
     
+    /// Update the current color of the Selector according to a specific point.
+    ///
+    /// - Parameters:
+    ///     - point: the CGPoint at which the color should be taken from.
     private func updateSelectorColor(point: CGPoint) {
         selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: brightnessSaturationView)
         if let color = selector.backgroundColor, let delegate = delegate {
@@ -97,18 +157,34 @@ public class BrightnessSaturationColorView: UIView {
         }
     }
     
+    // MARK: View setup methods.
+    
+    /// Creates the Saturation gradient color array for the given hue.
+    ///
+    /// - Parameters:
+    ///     - hue: the hue that should be used to generate the saturation gradient from.
+    /// - Returns: array of interpolated color of the saturation gradient.
     private func generateSaturationInterpolationArray(hue: CGFloat) -> [CGColor] {
         var colorArray = [CGColor]()
         
         for i in 0..<Int(samplingRate) {
             let interpolationValue = CGFloat(CGFloat(i) / samplingRate)
-            let color = UIColor(hue: hue, saturation: interpolationValue, brightness: 1.0, alpha: 1.0)
+            let color = UIColor(hue: hue,
+                                saturation: interpolationValue,
+                                brightness: 1.0,
+                                alpha: 1.0)
+            
             colorArray.append(color.cgColor)
         }
         
         return colorArray
     }
     
+    /// Creates the Saturation gradient for the given hue.
+    ///
+    /// - Parameters:
+    ///     - hue: the hue that should be used to generate the saturation gradient from.
+    /// - Returns: the saturation gradient layer.
     private func createSaturationLayer(hue: CGFloat) -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         
@@ -120,6 +196,9 @@ public class BrightnessSaturationColorView: UIView {
         return gradientLayer
     }
     
+    /// Creates the Brightness gradient.
+    ///
+    /// - Returns: the brightness gradient layer.
     private func createBrightnessLayer() -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         var colorArray = [CGColor]()
@@ -136,10 +215,7 @@ public class BrightnessSaturationColorView: UIView {
         return gradientLayer
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+    /// This method ensures that we can grab the color lying under the selector properly.
     override public func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let pointForTargetView = selector.convert(point, from: self)
 
@@ -152,7 +228,8 @@ public class BrightnessSaturationColorView: UIView {
     
     /// Sets the brightness and saturation selector to a certain color.
     ///
-    /// - Parameter color: UIColor for the selector position.
+    /// - Parameters:
+    ///     - color: UIColor for the selector position.
     func setColor(_ color: UIColor) {
         let saturation = color.saturation
         let brightness = color.brightness
@@ -169,7 +246,9 @@ public class BrightnessSaturationColorView: UIView {
     }
 }
 
-extension BrightnessSaturationColorView: HueUpdateDelegate {
+// MARK: HueDelegate methods.
+
+extension BrightnessSaturationView: HueDelegate {
     func didUpdateHue(hue: CGFloat) {
         DispatchQueue.main.async {
             self.updateSelectorColor(point: self.selector.center)
