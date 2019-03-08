@@ -2,12 +2,15 @@
 //  UIColor+HSBAComponents.swift
 //  Pikko
 //
-//  Created by Sandra Grujovic on 07.03.19.
+//  Created by Sandra & Johannes.
 //
 
 import Foundation
 
+/// Convenience method for easy access of hue, saturation, brightness and alpha components
+/// of a UIColor.
 extension UIColor {
+    
     fileprivate func getHSBAComponents(_ color: UIColor) -> (CGFloat, CGFloat, CGFloat, CGFloat) {
         var hue, saturation, brightness, alpha : CGFloat
         (hue, saturation, brightness, alpha) = (0.0, 0.0, 0.0, 0.0)
@@ -15,19 +18,19 @@ extension UIColor {
         return (hue, saturation, brightness, alpha)
     }
     
-    var hue: CGFloat {
+    internal var hue: CGFloat {
         return getHSBAComponents(self).0
     }
     
-    var saturation: CGFloat {
+    internal var saturation: CGFloat {
         return getHSBAComponents(self).1
     }
     
-    var brightness: CGFloat {
+    internal var brightness: CGFloat {
         return getHSBAComponents(self).2
     }
     
-    var alpha: CGFloat {
+    internal var alpha: CGFloat {
         return getHSBAComponents(self).3
     }
 }

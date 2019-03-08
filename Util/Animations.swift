@@ -1,23 +1,23 @@
 //
 //  Animations.swift
-//  Pikko_Example
+//  Pikko
 //
-//  Created by Sandra Grujovic on 15.10.18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Sandra & Johannes.
 //
 
 import Foundation
 import UIKit
 
+/// Convenience class for animating our selectors.
 class Animations {
     
-    public static func animateScale(view: UIView, byScale: CGFloat) {
+    internal static func animateScale(view: UIView, byScale: CGFloat) {
         UIView.animate(withDuration: 0.25) {
             view.transform = CGAffineTransform(scaleX: byScale,y: byScale)
         }
     }
     
-    public static func animateScaleReset(view: UIView) {
+    internal static func animateScaleReset(view: UIView) {
         UIView.animate(withDuration: 0.25) {
             view.transform = CGAffineTransform(scaleX: 1,y: 1)
         }

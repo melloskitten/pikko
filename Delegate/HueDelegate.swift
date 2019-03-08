@@ -1,14 +1,14 @@
 //
-//  asdf.swift
-//  Pikko_Example
+//  HueDelegate.swift
+//  Pikko
 //
-//  Created by Sandra Grujovic on 16.10.18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Sandra & Johannes.
 //
 
 import Foundation
 import UIKit
 
-protocol HueDelegate {
+/// Delegate used for writing back hue updates from the HueView.
+internal protocol HueDelegate {
     func didUpdateHue(hue: CGFloat)
 }
