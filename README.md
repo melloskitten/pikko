@@ -2,7 +2,7 @@
 
 [![CI Status](https://img.shields.io/travis/melloskitten/pikko.svg?style=flat)](https://travis-ci.org/melloskitten/pikko)
 [![Version](https://img.shields.io/cocoapods/v/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
-[![License](https://img.shields.io/cocoapods/l/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
+[![License](https://img.shields.io/github/license/melloskitten/pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
 [![Platform](https://img.shields.io/cocoapods/p/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
 
 ![Demo of pikko color picker](https://raw.githubusercontent.com/melloskitten/pikko/develop/doc/demo.gif)
