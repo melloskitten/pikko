@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/melloskitten/pikko/'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { 'Sandra' => 'melloskitten@googlemail.com', 'Johannes' => 'mail@johannesrohwer.com' }
   s.source           = { :git => 'https://github.com/melloskitten/pikko.git', :tag => s.version.to_s }
 
