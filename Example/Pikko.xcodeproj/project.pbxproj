@@ -210,12 +210,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = MVY877MQV7;
+						DevelopmentTeam = 45E39Y8V9N;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = MVY877MQV7;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -469,7 +468,7 @@
 			baseConfigurationReference = F25BA79E8E061AAB7E137959 /* Pods-Pikko_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MVY877MQV7;
+				DEVELOPMENT_TEAM = 45E39Y8V9N;
 				INFOPLIST_FILE = Pikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -485,7 +484,7 @@
 			baseConfigurationReference = F3468ECFB9902681A4562C53 /* Pods-Pikko_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MVY877MQV7;
+				DEVELOPMENT_TEAM = 45E39Y8V9N;
 				INFOPLIST_FILE = Pikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -500,7 +499,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5C4219A325CEAC4F6937D0A /* Pods-Pikko_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MVY877MQV7;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -523,7 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 161152AAD75AB3B243E85632 /* Pods-Pikko_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MVY877MQV7;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
