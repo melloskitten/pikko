@@ -33,6 +33,9 @@ internal class BrightnessSaturationView: UIView {
     /// The scale at which the selector enlargens when the user clicks on it and holds it.
     private var scale: CGFloat
     
+    /// The current hue value.
+    private var hue: CGFloat = 1.0
+    
     // MARK: - Public attributes.
     
     /// Delegate method for writing back changes in the color selection.
@@ -117,7 +120,7 @@ internal class BrightnessSaturationView: UIView {
             location.x = 0
         }
         
-        if location.x >= frame.width {
+        if location.x >= frame.width - 1 {
             location.x = frame.width - 1
         }
         
@@ -125,7 +128,7 @@ internal class BrightnessSaturationView: UIView {
             location.y = 0
         }
         
-        if location.y >= frame.height {
+        if location.y >= frame.height - 1 {
             location.y = frame.height - 1
         }
         updateSelectorColor(point: location)
@@ -151,7 +154,21 @@ internal class BrightnessSaturationView: UIView {
     /// - Parameters:
     ///     - point: the CGPoint at which the color should be taken from.
     private func updateSelectorColor(point: CGPoint) {
-        selector?.backgroundColor = ColorUtilities.getPixelColorAtPoint(point: point, sourceView: brightnessSaturationView)
+        var saturation = Double(point.x) / Double(frame.width)
+        var brightness = (Double(frame.height) - Double(point.y)) / Double(frame.height)
+        
+        // HACK: Reduce floating point errors in the edge cases of the brightness / saturation view.
+        saturation = saturation > 0.99 ? 1.0 : saturation
+        saturation = saturation < 0.01 ? 0.0 : saturation
+        
+        brightness = brightness > 0.99 ? 1.0 : brightness
+        brightness = brightness < 0.01 ? 0.0 : brightness
+
+        selector.backgroundColor = UIColor.init(hue: self.hue,
+                                                saturation: CGFloat(saturation),
+                                                brightness: CGFloat(brightness),
+                                                alpha: 1.0)
+        
         if let color = selector.backgroundColor, let delegate = delegate {
             delegate.writeBackColor(color: color)
         }
@@ -202,7 +219,7 @@ internal class BrightnessSaturationView: UIView {
     private func createBrightnessLayer() -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         var colorArray = [CGColor]()
-        
+
         for i in 0..<Int(samplingRate) {
             let interpolationValue = CGFloat(CGFloat(i) / samplingRate)
             let color = UIColor(hue: 0, saturation: 0, brightness: 0, alpha: interpolationValue)
@@ -251,6 +268,7 @@ internal class BrightnessSaturationView: UIView {
 extension BrightnessSaturationView: HueDelegate {
     internal func didUpdateHue(hue: CGFloat) {
         DispatchQueue.main.async {
+            self.hue = hue
             self.updateSelectorColor(point: self.selector.center)
         }
         

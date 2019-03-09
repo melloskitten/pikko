@@ -110,6 +110,7 @@ extension Pikko: PikkoDelegate {
     public func writeBackColor(color: UIColor) {
         if let delegate = delegate {
             currentColor = color
+            print("\(currentColor.hue) \(currentColor.saturation) \(currentColor.brightness)")
             delegate.writeBackColor(color: color)
         }
     }

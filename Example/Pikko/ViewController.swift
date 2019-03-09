@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         pikko.center = self.view.center
         self.view.addSubview(pikko)
         
-        // let color = UIColor.red
+        let color = UIColor.blue
         
-        // pikko.setColor(color)
+        pikko.setColor(color)
     }
 }
 
