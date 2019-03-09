@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
 [![Platform](https://img.shields.io/cocoapods/p/Pikko.svg?style=flat)](https://cocoapods.org/pods/Pikko)
 
-![Demo of pikko color picker](doc/demo.gif)
+![Demo of pikko color picker](https://raw.githubusercontent.com/melloskitten/pikko/develop/doc/demo.gif)
 
 Pikko is a simple and beautiful color picker for iOS. It's inspired by conventional color pickers from popular graphics tools such as _Photoshop_, _Paint Tool Sai_, _Procreate_ and many others. Pikko allows the selection of hue, saturation and brightness in a more pleasant way than boring sliders.
 
