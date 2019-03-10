@@ -1,7 +1,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'Pikko'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Pikko - iOS color picker made with ❤️'
   s.swift_version = '4.0'
 

@@ -7,134 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D9F0DBE00D0F7518A29D4B4C613BF6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		6A347DC47C430BFB503D9AF985A2841A /* Pikko-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 496AE98828F0B7B64A65BFA26F15ED13 /* Pikko-dummy.m */; };
-		7845F8654A71FDB68435BC950AE31158 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		9FD7E7F7F9BD1F76C77DB41F84DF1E92 /* Pikko-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9896528F1A214A5AD63CF863C5714301 /* Pikko-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB7126B206155512CF1A1BB42F4BF21A /* Pods-Pikko_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7608B8C135BEFEF68467737903FBD3 /* Pods-Pikko_Example-dummy.m */; };
-		B81DBA15770CC8130499EF6C20519F3A /* Pods-Pikko_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0557055C3D12D190F61D21193B7ADB4 /* Pods-Pikko_Tests-dummy.m */; };
-		B891FEC72E421B6C9743D13812E808BC /* Pods-Pikko_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 948D47A548B8213BED36EA9A70B322F1 /* Pods-Pikko_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCEDD5DB223465E500149597 /* ColorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D0223465E500149597 /* ColorUtilities.swift */; };
-		BCEDD5DC223465E500149597 /* UIColor+HSBAComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D1223465E500149597 /* UIColor+HSBAComponents.swift */; };
-		BCEDD5DD223465E500149597 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D2223465E500149597 /* Animations.swift */; };
-		BCEDD5DE223465E500149597 /* HueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D4223465E500149597 /* HueView.swift */; };
-		BCEDD5DF223465E500149597 /* Pikko.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D5223465E500149597 /* Pikko.swift */; };
-		BCEDD5E0223465E500149597 /* BrightnessSaturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D6223465E500149597 /* BrightnessSaturationView.swift */; };
-		BCEDD5E1223465E500149597 /* PikkoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5D8223465E500149597 /* PikkoDelegate.swift */; };
-		BCEDD5E2223465E500149597 /* HueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEDD5DA223465E500149597 /* HueDelegate.swift */; };
-		D3F4481A0EE94050A9CDC2EAD0CE165D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		F94B7189312BD67DC1DB234C1B2ABE56 /* Pods-Pikko_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D47C9C472E0102F50D632FB86D46221 /* Pods-Pikko_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A343A37F68ECEA968FA0BFF54F44929 /* Pikko-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C44FD49813813B12C48D2420C6D435 /* Pikko-dummy.m */; };
+		132B076B357400C780885AF61BE6B16F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		14896A26137FDCCEFBAF3CB7CA0CD189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		279C60ED956E53EA73815501FA70386F /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A907F3D8B7D933060D877F68FCD88A /* Animations.swift */; };
+		286556D1FFBA4B4583D074CF3F9C0D1D /* Pods-Pikko_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D47C9C472E0102F50D632FB86D46221 /* Pods-Pikko_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		314F06869B90DAD8719559F908AABB72 /* Pods-Pikko_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0557055C3D12D190F61D21193B7ADB4 /* Pods-Pikko_Tests-dummy.m */; };
+		3CBAB18161C759D5FCCC5A471289E51F /* HueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3328704C96846E46E8D4D2825EBB360E /* HueDelegate.swift */; };
+		3EF79C91333D3B5C2779618AA81B92E6 /* UIColor+HSBAComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB967593830625877102E166002044 /* UIColor+HSBAComponents.swift */; };
+		5B7760123083C42C2794C2EFCFE4326A /* Pods-Pikko_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 948D47A548B8213BED36EA9A70B322F1 /* Pods-Pikko_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803343F6FEF5873674C800455FE47F6B /* Pikko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF94E2C2E1C14BC020C8C23536D253 /* Pikko.swift */; };
+		825E0E82A4E4A085A44AE0D1BFEB6961 /* HueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37B09D51826B29E42EFE8C0F937F98 /* HueView.swift */; };
+		8650C4E28F5C5CC033C8015381032F56 /* Pikko-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF170E67CD5452B7597182479E62AA7 /* Pikko-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE0897D98D554BC871B3198F72F3C7C /* ColorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BA91CF6CB1472CBBB900001F54BBD /* ColorUtilities.swift */; };
+		AB50943CBFC17D18C13BC9A76CF0E013 /* Pods-Pikko_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7608B8C135BEFEF68467737903FBD3 /* Pods-Pikko_Example-dummy.m */; };
+		B372863754AB0FC2656E4BB691E0483F /* BrightnessSaturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49A90494BA1DFAD7FD2687A8B8F265 /* BrightnessSaturationView.swift */; };
+		E01DF94EAA2270604E26E616BB1B690C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E3E764F7120C2A794795F9AB2E72C750 /* PikkoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E2B6E465F77A6F0A974AC2547EDDF /* PikkoDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8FAD9DBF6B63CC8F8DBF392CB7FBA272 /* PBXContainerItemProxy */ = {
+		36FE351158FE72E376093F40E5A5F4C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3ACE7B079AC9F078191E08ABCB9D43FF;
-			remoteInfo = Pikko;
-		};
-		BB8E6D8D2942C76C04875F4E8A96DEF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 650F97CFFE1A2A8FE00667128B408D01;
+			remoteGlobalIDString = 6116082A744A08B53113032B2A13E0C6;
 			remoteInfo = "Pods-Pikko_Example";
+		};
+		D5139A66A383E2643B942D10EEFAD021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDA77E0298D068A7EB55E0FA3B2E563;
+			remoteInfo = Pikko;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03D74B4F102B02AF68A212DBD44628AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1B7608B8C135BEFEF68467737903FBD3 /* Pods-Pikko_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pikko_Example-dummy.m"; sourceTree = "<group>"; };
-		21DE18B90A6EA95D4D9882A3FF4AA009 /* Pikko.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Pikko.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		222BA91CF6CB1472CBBB900001F54BBD /* ColorUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorUtilities.swift; sourceTree = "<group>"; };
 		2A265E4456F733A5B4E2449E8EEC54EC /* Pods-Pikko_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Example-resources.sh"; sourceTree = "<group>"; };
+		2D37B09D51826B29E42EFE8C0F937F98 /* HueView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HueView.swift; sourceTree = "<group>"; };
 		2D47C9C472E0102F50D632FB86D46221 /* Pods-Pikko_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pikko_Example-umbrella.h"; sourceTree = "<group>"; };
 		3250A97052CBE2F9E650CB516F59EA87 /* Pods-Pikko_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Example.release.xcconfig"; sourceTree = "<group>"; };
+		32CB495DFFDA66C3A7578A2D670D823E /* Pikko.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pikko.modulemap; sourceTree = "<group>"; };
+		3328704C96846E46E8D4D2825EBB360E /* HueDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HueDelegate.swift; sourceTree = "<group>"; };
+		38FF94E2C2E1C14BC020C8C23536D253 /* Pikko.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pikko.swift; sourceTree = "<group>"; };
 		39768421F631412B792E702C7170E160 /* Pods-Pikko_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		47F5070F04778BF92162BDD2B6FAD35C /* Pods-Pikko_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pikko_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		496AE98828F0B7B64A65BFA26F15ED13 /* Pikko-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pikko-dummy.m"; sourceTree = "<group>"; };
 		5972543288BE2CFE12733C6FC230D40B /* Pods-Pikko_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B5AE42BC54D9A9553CF51DC3E436D74 /* Pods-Pikko_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pikko_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		616399FF4F0A6E46F3236AFE73D0436F /* Pods-Pikko_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pikko_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		639279BB13397859BCD64649840FFCCD /* Pods-Pikko_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pikko_Example.modulemap"; sourceTree = "<group>"; };
+		82A907F3D8B7D933060D877F68FCD88A /* Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		898C939495CFF2DE431DBFCB30AB3615 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CF170E67CD5452B7597182479E62AA7 /* Pikko-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pikko-umbrella.h"; sourceTree = "<group>"; };
+		8D4E2B6E465F77A6F0A974AC2547EDDF /* PikkoDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PikkoDelegate.swift; sourceTree = "<group>"; };
+		8E6CEB3D85F79A8DAE53895ED53FA218 /* Pikko.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Pikko.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		91C6E56BB43086B3F449ED7C376559B2 /* Pikko.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pikko.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		948D47A548B8213BED36EA9A70B322F1 /* Pods-Pikko_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pikko_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9896528F1A214A5AD63CF863C5714301 /* Pikko-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pikko-umbrella.h"; sourceTree = "<group>"; };
+		94B30B8493B44B2CB01ED685E68292C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9EEACCCECE66A9F1607FEEEF415DD88C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6B6047D00C445E851AC07033D21E3B6 /* Pods-Pikko_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A79970E5A361E8C39DD0A43A40EB1CEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4B975CD55602501D645CDA187742DA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6C5574131E8F3D2030E2724C3EA0773 /* Pikko.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pikko.xcconfig; sourceTree = "<group>"; };
-		BCEDD5D0223465E500149597 /* ColorUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtilities.swift; sourceTree = "<group>"; };
-		BCEDD5D1223465E500149597 /* UIColor+HSBAComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HSBAComponents.swift"; sourceTree = "<group>"; };
-		BCEDD5D2223465E500149597 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
-		BCEDD5D4223465E500149597 /* HueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueView.swift; sourceTree = "<group>"; };
-		BCEDD5D5223465E500149597 /* Pikko.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pikko.swift; sourceTree = "<group>"; };
-		BCEDD5D6223465E500149597 /* BrightnessSaturationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessSaturationView.swift; sourceTree = "<group>"; };
-		BCEDD5D8223465E500149597 /* PikkoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PikkoDelegate.swift; sourceTree = "<group>"; };
-		BCEDD5DA223465E500149597 /* HueDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueDelegate.swift; sourceTree = "<group>"; };
+		B9C44FD49813813B12C48D2420C6D435 /* Pikko-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pikko-dummy.m"; sourceTree = "<group>"; };
 		C0557055C3D12D190F61D21193B7ADB4 /* Pods-Pikko_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pikko_Tests-dummy.m"; sourceTree = "<group>"; };
-		C81EA5E00CE1E3572CF75144366ACEB5 /* Pikko.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pikko.modulemap; sourceTree = "<group>"; };
-		D30AA48209CDFDE1836953FF2CD46343 /* Pikko-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pikko-prefix.pch"; sourceTree = "<group>"; };
-		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1DB967593830625877102E166002044 /* UIColor+HSBAComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+HSBAComponents.swift"; sourceTree = "<group>"; };
+		DA75D338447ECBCB04A34C28A6AF2B9D /* Pikko-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pikko-prefix.pch"; sourceTree = "<group>"; };
 		DAC69CC508CBC48DC5E293F480D76E05 /* Pods-Pikko_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Tests-resources.sh"; sourceTree = "<group>"; };
 		E4B63D66F2936C83AFCB5CB0E1412E3D /* Pods-Pikko_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pikko_Tests.modulemap"; sourceTree = "<group>"; };
-		E5A296DC73B865A590038832F61B42F8 /* Pods_Pikko_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB473BB2789332D961FFBD3B58E567D2 /* Pods_Pikko_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikko_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A296DC73B865A590038832F61B42F8 /* Pods_Pikko_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pikko_Tests.framework; path = "Pods-Pikko_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB473BB2789332D961FFBD3B58E567D2 /* Pods_Pikko_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pikko_Example.framework; path = "Pods-Pikko_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FE47C4715E1D27A7455FE23B48D24A /* Pods-Pikko_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pikko_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2BA27C1B7EC94F6925BEAAAFEE87D03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F3C318AC00B3B21567A34228689DC2B5 /* Pikko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pikko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C318AC00B3B21567A34228689DC2B5 /* Pikko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pikko.framework; path = Pikko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4362A03BD3724A8AB2E88C7522CC3D5 /* Pods-Pikko_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pikko_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F9A298BAE0342746D7C4417B8FD8A496 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FD49A90494BA1DFAD7FD2687A8B8F265 /* BrightnessSaturationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrightnessSaturationView.swift; sourceTree = "<group>"; };
 		FF638916E3C711A197F8D38C4BA4CA08 /* Pods-Pikko_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pikko_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		548FB5C61991708876DBB94755ECAD7C /* Frameworks */ = {
+		784DE806C7127BCFF86AF506C4F2EB66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F4481A0EE94050A9CDC2EAD0CE165D /* Foundation.framework in Frameworks */,
+				E01DF94EAA2270604E26E616BB1B690C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65C40F6CE8E26300E7F756031113EE7A /* Frameworks */ = {
+		8FEA180848AF5E32D2611BC6155697A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9F0DBE00D0F7518A29D4B4C613BF6A /* Foundation.framework in Frameworks */,
+				132B076B357400C780885AF61BE6B16F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDDE5D34682748EDD9DEEB86AB79FEB4 /* Frameworks */ = {
+		C1254CDCACFEA6DA2F0AC745A955EBB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7845F8654A71FDB68435BC950AE31158 /* Foundation.framework in Frameworks */,
+				14896A26137FDCCEFBAF3CB7CA0CD189 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B17D81F8810B061AB287124446F0FF2 /* Pod */ = {
+		03DB503DA957068145708B4879692841 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				BCEDD5D7223465E500149597 /* Delegate */,
-				BCEDD5D3223465E500149597 /* UI */,
-				BCEDD5CF223465E500149597 /* Util */,
-				F2BA27C1B7EC94F6925BEAAAFEE87D03 /* LICENSE */,
-				21DE18B90A6EA95D4D9882A3FF4AA009 /* Pikko.podspec */,
-				F9A298BAE0342746D7C4417B8FD8A496 /* README.md */,
+				82A907F3D8B7D933060D877F68FCD88A /* Animations.swift */,
+				222BA91CF6CB1472CBBB900001F54BBD /* ColorUtilities.swift */,
+				D1DB967593830625877102E166002044 /* UIColor+HSBAComponents.swift */,
 			);
-			name = Pod;
+			name = Util;
+			path = Pikko/Classes/Util;
 			sourceTree = "<group>";
 		};
-		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+		07975889BE9F289D5913C9F5F024EA61 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+				9EEACCCECE66A9F1607FEEEF415DD88C /* Info.plist */,
+				32CB495DFFDA66C3A7578A2D670D823E /* Pikko.modulemap */,
+				91C6E56BB43086B3F449ED7C376559B2 /* Pikko.xcconfig */,
+				B9C44FD49813813B12C48D2420C6D435 /* Pikko-dummy.m */,
+				DA75D338447ECBCB04A34C28A6AF2B9D /* Pikko-prefix.pch */,
+				8CF170E67CD5452B7597182479E62AA7 /* Pikko-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pikko";
+			sourceTree = "<group>";
+		};
+		1B65509758ABB0F85D1A41D9B087632A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3328704C96846E46E8D4D2825EBB360E /* HueDelegate.swift */,
+				8D4E2B6E465F77A6F0A974AC2547EDDF /* PikkoDelegate.swift */,
+			);
+			name = Delegate;
+			path = Pikko/Classes/Delegate;
 			sourceTree = "<group>";
 		};
 		4E331D0C4A3940B5A299248C3C0B917C /* Products */ = {
@@ -147,11 +161,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		51299C8CDD902F4E6911C92390678B07 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD49A90494BA1DFAD7FD2687A8B8F265 /* BrightnessSaturationView.swift */,
+				2D37B09D51826B29E42EFE8C0F937F98 /* HueView.swift */,
+				38FF94E2C2E1C14BC020C8C23536D253 /* Pikko.swift */,
+			);
+			name = UI;
+			path = Pikko/Classes/UI;
+			sourceTree = "<group>";
+		};
+		5B0D2B028F178A20C4705B16C31FD83E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				03D74B4F102B02AF68A212DBD44628AC /* LICENSE */,
+				8E6CEB3D85F79A8DAE53895ED53FA218 /* Pikko.podspec */,
+				94B30B8493B44B2CB01ED685E68292C4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				90981D9A39E487FC01631BBECADC8AC5 /* Development Pods */,
+				FAECACBFCECF60A512DA67239D7A32CB /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				4E331D0C4A3940B5A299248C3C0B917C /* Products */,
 				EED70813CCAD51C87F8723866D9B91F1 /* Targets Support Files */,
@@ -176,14 +219,6 @@
 			path = "Target Support Files/Pods-Pikko_Tests";
 			sourceTree = "<group>";
 		};
-		90981D9A39E487FC01631BBECADC8AC5 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AC4C6EC640BEC4507B24E335A44F009A /* Pikko */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		A36168BC656A5F9F9EA0078F4A34111B /* Pods-Pikko_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,68 +237,12 @@
 			path = "Target Support Files/Pods-Pikko_Example";
 			sourceTree = "<group>";
 		};
-		AC4C6EC640BEC4507B24E335A44F009A /* Pikko */ = {
-			isa = PBXGroup;
-			children = (
-				0B17D81F8810B061AB287124446F0FF2 /* Pod */,
-				BEE07938A4243CEAB31B50F79CFB2CF0 /* Support Files */,
-			);
-			name = Pikko;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44D5347904CF754D6785B84253F2574A /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BCEDD5CF223465E500149597 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				BCEDD5D0223465E500149597 /* ColorUtilities.swift */,
-				BCEDD5D1223465E500149597 /* UIColor+HSBAComponents.swift */,
-				BCEDD5D2223465E500149597 /* Animations.swift */,
-			);
-			name = Util;
-			path = Pikko/Classes/Util;
-			sourceTree = "<group>";
-		};
-		BCEDD5D3223465E500149597 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				BCEDD5D4223465E500149597 /* HueView.swift */,
-				BCEDD5D5223465E500149597 /* Pikko.swift */,
-				BCEDD5D6223465E500149597 /* BrightnessSaturationView.swift */,
-			);
-			name = UI;
-			path = Pikko/Classes/UI;
-			sourceTree = "<group>";
-		};
-		BCEDD5D7223465E500149597 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				BCEDD5D8223465E500149597 /* PikkoDelegate.swift */,
-				BCEDD5DA223465E500149597 /* HueDelegate.swift */,
-			);
-			name = Delegate;
-			path = Pikko/Classes/Delegate;
-			sourceTree = "<group>";
-		};
-		BEE07938A4243CEAB31B50F79CFB2CF0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4B975CD55602501D645CDA187742DA1 /* Info.plist */,
-				C81EA5E00CE1E3572CF75144366ACEB5 /* Pikko.modulemap */,
-				B6C5574131E8F3D2030E2724C3EA0773 /* Pikko.xcconfig */,
-				496AE98828F0B7B64A65BFA26F15ED13 /* Pikko-dummy.m */,
-				D30AA48209CDFDE1836953FF2CD46343 /* Pikko-prefix.pch */,
-				9896528F1A214A5AD63CF863C5714301 /* Pikko-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pikko";
 			sourceTree = "<group>";
 		};
 		EED70813CCAD51C87F8723866D9B91F1 /* Targets Support Files */ = {
@@ -275,44 +254,100 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F93F0DBE14A4FF60702AB9A4A6B1CBA2 /* Pikko */ = {
+			isa = PBXGroup;
+			children = (
+				1B65509758ABB0F85D1A41D9B087632A /* Delegate */,
+				5B0D2B028F178A20C4705B16C31FD83E /* Pod */,
+				07975889BE9F289D5913C9F5F024EA61 /* Support Files */,
+				51299C8CDD902F4E6911C92390678B07 /* UI */,
+				03DB503DA957068145708B4879692841 /* Util */,
+			);
+			name = Pikko;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FAECACBFCECF60A512DA67239D7A32CB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F93F0DBE14A4FF60702AB9A4A6B1CBA2 /* Pikko */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		15573B77AB8534CAC8CC3FB350C9AE91 /* Headers */ = {
+		023D8AA3C2E9AF390411440869BA15B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B891FEC72E421B6C9743D13812E808BC /* Pods-Pikko_Tests-umbrella.h in Headers */,
+				5B7760123083C42C2794C2EFCFE4326A /* Pods-Pikko_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37608C4B2E7416ED8D9B02465CCA187D /* Headers */ = {
+		C7AC19F1B620DD95C1343BCD050FD5A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD7E7F7F9BD1F76C77DB41F84DF1E92 /* Pikko-umbrella.h in Headers */,
+				8650C4E28F5C5CC033C8015381032F56 /* Pikko-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBA1A1D5D72A8F6822990974C3518EB8 /* Headers */ = {
+		D2E173FC8E67C9E2E6FB7955159BFFC7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94B7189312BD67DC1DB234C1B2ABE56 /* Pods-Pikko_Example-umbrella.h in Headers */,
+				286556D1FFBA4B4583D074CF3F9C0D1D /* Pods-Pikko_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3ACE7B079AC9F078191E08ABCB9D43FF /* Pikko */ = {
+		2DFA3D97506037A4D02192513883DC32 /* Pods-Pikko_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D30CD2A5933447AE4A1B206216350437 /* Build configuration list for PBXNativeTarget "Pikko" */;
+			buildConfigurationList = B6D3600189DA79BA1AB87122E7643B7D /* Build configuration list for PBXNativeTarget "Pods-Pikko_Tests" */;
 			buildPhases = (
-				37608C4B2E7416ED8D9B02465CCA187D /* Headers */,
-				36405347525B43DCB4E9453AB92F1F14 /* Sources */,
-				548FB5C61991708876DBB94755ECAD7C /* Frameworks */,
-				AC5BC7083B792E8C65DEF7C3013B306E /* Resources */,
+				190BED00BB91B1BA10D8E87756698CCF /* Sources */,
+				8FEA180848AF5E32D2611BC6155697A5 /* Frameworks */,
+				023D8AA3C2E9AF390411440869BA15B8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F0BC71071E2EF18A164B377FA11C616 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pikko_Tests";
+			productName = "Pods-Pikko_Tests";
+			productReference = E5A296DC73B865A590038832F61B42F8 /* Pods_Pikko_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6116082A744A08B53113032B2A13E0C6 /* Pods-Pikko_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8098383F6AC5904A8CDC3E523FAA2ED /* Build configuration list for PBXNativeTarget "Pods-Pikko_Example" */;
+			buildPhases = (
+				09BFF97F865BDD7DB8E34267E825BF78 /* Sources */,
+				784DE806C7127BCFF86AF506C4F2EB66 /* Frameworks */,
+				D2E173FC8E67C9E2E6FB7955159BFFC7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92FE277841B3B98D78E9B59AA3E540A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pikko_Example";
+			productName = "Pods-Pikko_Example";
+			productReference = EB473BB2789332D961FFBD3B58E567D2 /* Pods_Pikko_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDDA77E0298D068A7EB55E0FA3B2E563 /* Pikko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D139F7E210A6C500BC44FBB4BE00A31 /* Build configuration list for PBXNativeTarget "Pikko" */;
+			buildPhases = (
+				73D66B8BDF3B553D2BC3CB30E23E80A2 /* Sources */,
+				C1254CDCACFEA6DA2F0AC745A955EBB6 /* Frameworks */,
+				C7AC19F1B620DD95C1343BCD050FD5A3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -321,44 +356,6 @@
 			name = Pikko;
 			productName = Pikko;
 			productReference = F3C318AC00B3B21567A34228689DC2B5 /* Pikko.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		650F97CFFE1A2A8FE00667128B408D01 /* Pods-Pikko_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C48E6472FD1B549A9A70B6588232945 /* Build configuration list for PBXNativeTarget "Pods-Pikko_Example" */;
-			buildPhases = (
-				FBA1A1D5D72A8F6822990974C3518EB8 /* Headers */,
-				6542521C294BDCA66939F8F359F0C482 /* Sources */,
-				65C40F6CE8E26300E7F756031113EE7A /* Frameworks */,
-				D1BA723F78C1B960357B1377A545DA2E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				804546ADF66450B71E05FA13BD178E9E /* PBXTargetDependency */,
-			);
-			name = "Pods-Pikko_Example";
-			productName = "Pods-Pikko_Example";
-			productReference = EB473BB2789332D961FFBD3B58E567D2 /* Pods_Pikko_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EDCE786B7CEB53A7CD7A9697A9FD9C9F /* Pods-Pikko_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1970FB5E9CFA1B0BDEC7B93D14C305A5 /* Build configuration list for PBXNativeTarget "Pods-Pikko_Tests" */;
-			buildPhases = (
-				15573B77AB8534CAC8CC3FB350C9AE91 /* Headers */,
-				E868C6E59313FD8A01A3A8AB53D01A3A /* Sources */,
-				BDDE5D34682748EDD9DEEB86AB79FEB4 /* Frameworks */,
-				640C257F3A5B9B4A4A0ABC35DE8B5177 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D08F605FA1B1367453CE0B121341EBF0 /* PBXTargetDependency */,
-			);
-			name = "Pods-Pikko_Tests";
-			productName = "Pods-Pikko_Tests";
-			productReference = E5A296DC73B865A590038832F61B42F8 /* Pods_Pikko_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -382,89 +379,132 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3ACE7B079AC9F078191E08ABCB9D43FF /* Pikko */,
-				650F97CFFE1A2A8FE00667128B408D01 /* Pods-Pikko_Example */,
-				EDCE786B7CEB53A7CD7A9697A9FD9C9F /* Pods-Pikko_Tests */,
+				FDDA77E0298D068A7EB55E0FA3B2E563 /* Pikko */,
+				6116082A744A08B53113032B2A13E0C6 /* Pods-Pikko_Example */,
+				2DFA3D97506037A4D02192513883DC32 /* Pods-Pikko_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		640C257F3A5B9B4A4A0ABC35DE8B5177 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC5BC7083B792E8C65DEF7C3013B306E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1BA723F78C1B960357B1377A545DA2E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		36405347525B43DCB4E9453AB92F1F14 /* Sources */ = {
+		09BFF97F865BDD7DB8E34267E825BF78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEDD5DF223465E500149597 /* Pikko.swift in Sources */,
-				BCEDD5DE223465E500149597 /* HueView.swift in Sources */,
-				BCEDD5DB223465E500149597 /* ColorUtilities.swift in Sources */,
-				BCEDD5DC223465E500149597 /* UIColor+HSBAComponents.swift in Sources */,
-				BCEDD5E0223465E500149597 /* BrightnessSaturationView.swift in Sources */,
-				BCEDD5DD223465E500149597 /* Animations.swift in Sources */,
-				BCEDD5E2223465E500149597 /* HueDelegate.swift in Sources */,
-				6A347DC47C430BFB503D9AF985A2841A /* Pikko-dummy.m in Sources */,
-				BCEDD5E1223465E500149597 /* PikkoDelegate.swift in Sources */,
+				AB50943CBFC17D18C13BC9A76CF0E013 /* Pods-Pikko_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6542521C294BDCA66939F8F359F0C482 /* Sources */ = {
+		190BED00BB91B1BA10D8E87756698CCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7126B206155512CF1A1BB42F4BF21A /* Pods-Pikko_Example-dummy.m in Sources */,
+				314F06869B90DAD8719559F908AABB72 /* Pods-Pikko_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E868C6E59313FD8A01A3A8AB53D01A3A /* Sources */ = {
+		73D66B8BDF3B553D2BC3CB30E23E80A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81DBA15770CC8130499EF6C20519F3A /* Pods-Pikko_Tests-dummy.m in Sources */,
+				279C60ED956E53EA73815501FA70386F /* Animations.swift in Sources */,
+				B372863754AB0FC2656E4BB691E0483F /* BrightnessSaturationView.swift in Sources */,
+				AAE0897D98D554BC871B3198F72F3C7C /* ColorUtilities.swift in Sources */,
+				3CBAB18161C759D5FCCC5A471289E51F /* HueDelegate.swift in Sources */,
+				825E0E82A4E4A085A44AE0D1BFEB6961 /* HueView.swift in Sources */,
+				0A343A37F68ECEA968FA0BFF54F44929 /* Pikko-dummy.m in Sources */,
+				803343F6FEF5873674C800455FE47F6B /* Pikko.swift in Sources */,
+				E3E764F7120C2A794795F9AB2E72C750 /* PikkoDelegate.swift in Sources */,
+				3EF79C91333D3B5C2779618AA81B92E6 /* UIColor+HSBAComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		804546ADF66450B71E05FA13BD178E9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pikko;
-			target = 3ACE7B079AC9F078191E08ABCB9D43FF /* Pikko */;
-			targetProxy = 8FAD9DBF6B63CC8F8DBF392CB7FBA272 /* PBXContainerItemProxy */;
-		};
-		D08F605FA1B1367453CE0B121341EBF0 /* PBXTargetDependency */ = {
+		0F0BC71071E2EF18A164B377FA11C616 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Pikko_Example";
-			target = 650F97CFFE1A2A8FE00667128B408D01 /* Pods-Pikko_Example */;
-			targetProxy = BB8E6D8D2942C76C04875F4E8A96DEF6 /* PBXContainerItemProxy */;
+			target = 6116082A744A08B53113032B2A13E0C6 /* Pods-Pikko_Example */;
+			targetProxy = 36FE351158FE72E376093F40E5A5F4C5 /* PBXContainerItemProxy */;
+		};
+		92FE277841B3B98D78E9B59AA3E540A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pikko;
+			target = FDDA77E0298D068A7EB55E0FA3B2E563 /* Pikko */;
+			targetProxy = D5139A66A383E2643B942D10EEFAD021 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4413E89246ABC2A52F3F23248267F105 /* Release */ = {
+		16A597D54A0AECC6A230056CD0E0F2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39768421F631412B792E702C7170E160 /* Pods-Pikko_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pikko_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		369E3119E4D73F15C996F28B7474E738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5972543288BE2CFE12733C6FC230D40B /* Pods-Pikko_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pikko_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47DB7AC3F93BB17CBCF1F014C343152F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3250A97052CBE2F9E650CB516F59EA87 /* Pods-Pikko_Example.release.xcconfig */;
 			buildSettings = {
@@ -491,6 +531,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -498,7 +539,7 @@
 			};
 			name = Release;
 		};
-		50646285DD9FD95AF390BDA3FB1948EA /* Debug */ = {
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -552,19 +593,51 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */ = {
+		A6DFD1EAC839554828F3136A373B465F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF638916E3C711A197F8D38C4BA4CA08 /* Pods-Pikko_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pikko_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -616,52 +689,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		7F093B3AFFCDEECFD7B3AF5D36442505 /* Release */ = {
+		B5BE5DE699E89FD18EBAC9533D1D1299 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5972543288BE2CFE12733C6FC230D40B /* Pods-Pikko_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pikko_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8C5E6ECC76BC9E4EDAA2EBBAF6020821 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C5574131E8F3D2030E2724C3EA0773 /* Pikko.xcconfig */;
+			baseConfigurationReference = 91C6E56BB43086B3F449ED7C376559B2 /* Pikko.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -683,6 +719,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -690,75 +727,9 @@
 			};
 			name = Debug;
 		};
-		A637066067EEBB1BEC5EF9A5E11129FD /* Debug */ = {
+		D7ED40A35169A02244FBC3656E0CD6A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF638916E3C711A197F8D38C4BA4CA08 /* Pods-Pikko_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pikko_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AC1A20BE69C0594EE09795E20C294BC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39768421F631412B792E702C7170E160 /* Pods-Pikko_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pikko_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pikko_Tests/Pods-Pikko_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DC7B092E9359652360DFAE5F2B595D33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C5574131E8F3D2030E2724C3EA0773 /* Pikko.xcconfig */;
+			baseConfigurationReference = 91C6E56BB43086B3F449ED7C376559B2 /* Pikko.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -780,6 +751,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -791,38 +763,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C48E6472FD1B549A9A70B6588232945 /* Build configuration list for PBXNativeTarget "Pods-Pikko_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A637066067EEBB1BEC5EF9A5E11129FD /* Debug */,
-				4413E89246ABC2A52F3F23248267F105 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1970FB5E9CFA1B0BDEC7B93D14C305A5 /* Build configuration list for PBXNativeTarget "Pods-Pikko_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC1A20BE69C0594EE09795E20C294BC3 /* Debug */,
-				7F093B3AFFCDEECFD7B3AF5D36442505 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50646285DD9FD95AF390BDA3FB1948EA /* Debug */,
-				58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */,
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D30CD2A5933447AE4A1B206216350437 /* Build configuration list for PBXNativeTarget "Pikko" */ = {
+		8D139F7E210A6C500BC44FBB4BE00A31 /* Build configuration list for PBXNativeTarget "Pikko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C5E6ECC76BC9E4EDAA2EBBAF6020821 /* Debug */,
-				DC7B092E9359652360DFAE5F2B595D33 /* Release */,
+				B5BE5DE699E89FD18EBAC9533D1D1299 /* Debug */,
+				D7ED40A35169A02244FBC3656E0CD6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D3600189DA79BA1AB87122E7643B7D /* Build configuration list for PBXNativeTarget "Pods-Pikko_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A597D54A0AECC6A230056CD0E0F2AD /* Debug */,
+				369E3119E4D73F15C996F28B7474E738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8098383F6AC5904A8CDC3E523FAA2ED /* Build configuration list for PBXNativeTarget "Pods-Pikko_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DFD1EAC839554828F3136A373B465F /* Debug */,
+				47DB7AC3F93BB17CBCF1F014C343152F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
