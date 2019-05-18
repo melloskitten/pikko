@@ -68,11 +68,6 @@ class ViewController: UIViewController {
         pikko.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -200).isActive = true
 
     }
-    
-    func setUpPikkoWithStoryboard() {
-        PikkoView.delegate = self
-        PikkoView.setColor(.purple)
-    }
 }
 
 // MARK: - PikkoDelegate methods.

@@ -15,6 +15,9 @@ Feel free to use, modify and improve. ✌️
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
+### Initializing Pikko programmatically, without autoconstraints
+
 You can intialize a new color picker in the following way:
 
 ```swift
@@ -46,6 +49,32 @@ let color = pikko.getColor()
 pikko.setColor(.blue)
 ```
 
+### Initializing Pikko programmatically, with autoconstraints
+
+```swift
+
+// Initialize a new Pikko instance.
+let pikko = Pikko(dimension: 300, setToColor: .purple)
+
+// Set the PikkoDelegate to get notified on new color changes.
+pikko.delegate = self
+
+// Set Pikko center and add it to the main view.
+self.view.addSubview(pikko)
+
+// Get the current color.
+_ = pikko.getColor()
+
+// Set autoconstraints.
+pikko.translatesAutoresizingMaskIntoConstraints = false
+pikko.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+pikko.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -200).isActive = true
+
+```
+
+### Initializing Pikko via Storyboard
+
+In Progress -
 
 ## Installation
 
