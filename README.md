@@ -74,7 +74,21 @@ pikko.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -200)
 
 ### Initializing Pikko via Storyboard
 
-In Progress -
+Add a `UIView` to your Storyboard, then simply select `Pikko` as the class. You can add autoconstraints in the interface builder normally as you would with any other view.
+
+__NOTE:__ If you're using Pikko in the storyboard, you have to set the delegate and color in the `viewDidAppear` or `viewWillAppear` methods.
+
+```swift
+@IBOutlet weak var PikkoView: Pikko!
+
+/// If you add Pikko via interface builder and you want to set
+/// a color on your picker or set the delegate, make sure to 
+/// call it from this method, NOT the viewDidLoad.
+override func viewDidAppear(_ animated: Bool) {
+    PikkoView.delegate = self
+    PikkoView.setColor(.purple)
+}
+```
 
 ## Installation
 
