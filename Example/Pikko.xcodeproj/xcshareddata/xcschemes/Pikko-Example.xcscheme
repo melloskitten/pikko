@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3ACE7B079AC9F078191E08ABCB9D43FF"
+               BlueprintIdentifier = "FDDA77E0298D068A7EB55E0FA3B2E563"
                BuildableName = "Pikko.framework"
                BlueprintName = "Pikko"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">

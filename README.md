@@ -15,6 +15,9 @@ Feel free to use, modify and improve. ✌️
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
+### Initializing Pikko programmatically, without autoconstraints
+
 You can intialize a new color picker in the following way:
 
 ```swift
@@ -46,6 +49,46 @@ let color = pikko.getColor()
 pikko.setColor(.blue)
 ```
 
+### Initializing Pikko programmatically, with autoconstraints
+
+```swift
+
+// Initialize a new Pikko instance.
+let pikko = Pikko(dimension: 300, setToColor: .purple)
+
+// Set the PikkoDelegate to get notified on new color changes.
+pikko.delegate = self
+
+// Set Pikko center and add it to the main view.
+self.view.addSubview(pikko)
+
+// Get the current color.
+_ = pikko.getColor()
+
+// Set autoconstraints.
+pikko.translatesAutoresizingMaskIntoConstraints = false
+pikko.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+pikko.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -200).isActive = true
+
+```
+
+### Initializing Pikko via Storyboard
+
+Add a `UIView` to your Storyboard, then simply select `Pikko` as the class. You can add autoconstraints in the interface builder normally as you would with any other view.
+
+__NOTE:__ If you're using Pikko in the storyboard, you have to set the delegate and color in the `viewDidAppear` or `viewWillAppear` methods.
+
+```swift
+@IBOutlet weak var PikkoView: Pikko!
+
+/// If you add Pikko via interface builder and you want to set
+/// a color on your picker or set the delegate, make sure to 
+/// call it from this method, NOT the viewDidLoad.
+override func viewDidAppear(_ animated: Bool) {
+    PikkoView.delegate = self
+    PikkoView.setColor(.purple)
+}
+```
 
 ## Installation
 
