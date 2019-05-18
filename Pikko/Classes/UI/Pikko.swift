@@ -11,11 +11,15 @@ import UIKit
 
 /// The Pikko colorpicker, holding the two subviews, namely the hue ring and brightness/saturation
 /// square picker.
+@IBDesignable
+@available(iOS 9.0, *)
 public class Pikko: UIView {
     
     private var hueView: HueView?
     private var brightnessSaturationView: BrightnessSaturationView?
     private var currentColor: UIColor = .white
+    public var dimension: Int = 0
+
     
     /// The PikkoDelegate that is called whenever the color is updated.
     public var delegate: PikkoDelegate?
@@ -31,10 +35,34 @@ public class Pikko: UIView {
     public init(dimension: Int, setToColor color: UIColor = .white) {
         let frame = CGRect(x: 0, y: 0, width: dimension, height: dimension)
         super.init(frame: frame)
+        self.dimension = dimension
+        self.currentColor = color
         setUpColorPickerViews(frame)
         setColor(color)
+        self.widthAnchor.constraint(equalToConstant: CGFloat(dimension)).isActive = true
+        self.heightAnchor.constraint(equalToConstant: CGFloat(dimension)).isActive = true
     }
     
+    /// This constructor is necessary for the interface builder rendering,
+    /// and should not be called by application programmers. Use
+    /// `init(dimension: Int, setToColor color: UIColor)` instead.
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.dimension = Int(frame.width)
+        setUpColorPickerViews(frame)
+    }
+    
+    /// This method is called when resizing or moving the picker
+    /// in the interface builder.
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        self.brightnessSaturationView?.removeFromSuperview()
+        self.hueView?.removeFromSuperview()
+        let newFrame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        setUpColorPickerViews(newFrame)
+        setColor(currentColor)
+    }
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -72,6 +100,7 @@ public class Pikko: UIView {
             square.center = hue.center
             self.addSubview(hue)
             self.addSubview(square)
+
         }
     }
     
@@ -96,6 +125,7 @@ public class Pikko: UIView {
 
 // MARK: HueDelegate methods.
 
+@available(iOS 9.0, *)
 extension Pikko: HueDelegate {
     func didUpdateHue(hue: CGFloat) {
         if let square = brightnessSaturationView {
@@ -106,6 +136,7 @@ extension Pikko: HueDelegate {
 
 // MARK: PikkoDelegate methods.
 
+@available(iOS 9.0, *)
 extension Pikko: PikkoDelegate {
     public func writeBackColor(color: UIColor) {
         currentColor = color
