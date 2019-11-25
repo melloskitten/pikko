@@ -1,6 +1,6 @@
 {
   "name": "Pikko",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": "Pikko - iOS color picker made with ❤️",
   "swift_version": "4.0",
   "description": "Pikko is a simple and beautiful color picker for iOS. It's inspired by conventional color pickers from popular graphics tools such as _Photoshop_, _Paint Tool Sai_, _Procreate_ and many others. Pikko allows the selection of hue, saturation and brightness in a more pleasant way than boring sliders.",
@@ -14,10 +14,10 @@
   },
   "source": {
     "git": "https://github.com/melloskitten/pikko.git",
-    "tag": "1.0.2"
+    "tag": "1.0.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Pikko/Classes/**/*"
+  "source_files": "Pikko/Sources/Pikko/Classes/**/*"
 }

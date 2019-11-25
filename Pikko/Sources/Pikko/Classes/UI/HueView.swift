@@ -4,7 +4,7 @@
 //
 //  Created by Sandra & Johannes.
 //
-
+#if os(iOS)
 import UIKit
 
 /// Ring view representing the hue.
@@ -189,3 +189,5 @@ internal class HueView: UIView {
         updateColor(point: newCenter)
     }
 }
+
+#endif

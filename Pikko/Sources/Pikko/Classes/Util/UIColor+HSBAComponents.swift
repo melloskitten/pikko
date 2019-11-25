@@ -6,6 +6,9 @@
 //
 
 import Foundation
+#if os(iOS)
+import UIKit
+
 
 /// Convenience method for easy access of hue, saturation, brightness and alpha components
 /// of a UIColor.
@@ -34,3 +37,4 @@ extension UIColor {
         return getHSBAComponents(self).3
     }
 }
+#endif
