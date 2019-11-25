@@ -19,5 +19,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PikkoSPM/Pikko/Sources/Pikko/Classes/**/*"
+  "source_files": "Pikko/Sources/Pikko/Classes/**/*"
 }

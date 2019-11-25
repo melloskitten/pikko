@@ -24,10 +24,10 @@ let package = Package(
         .target(
             name: "Pikko",
             dependencies: [],
-            path: "PikkoSPM/Pikko/Sources"),
+            path: "Pikko/Sources"),
         .testTarget(
             name: "PikkoTests",
             dependencies: ["Pikko"],
-            path: "PikkoSPM/Pikko/Tests"),
+            path: "Pikko/Tests"),
     ]
 )
