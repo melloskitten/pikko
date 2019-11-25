@@ -31,7 +31,6 @@ Make sure to set the Pikko delegate to get updates on color changes:
 // Set the PikkoDelegate to get notified on new color changes.
 pikko.delegate = self
 ```
-
 Positioning Pikko:
 
 ```swift
@@ -90,13 +89,40 @@ override func viewDidAppear(_ animated: Bool) {
 }
 ```
 
+###  Note
+
+Regardless how you are initializing Pikko, you will have to implement the `PikkoDelegate` protocol accordingly, which will look like something along these lines:
+
+```swift
+
+class ViewController: UIViewController, PikkoDelegate {
+...
+
+// Delegate method that lets you get updates on the currently
+// selected color.
+func writeBackColor(color: UIColor) {
+    // TODO: Handle received color. 
+}
+
+```
+
 ## Installation
+
+### CocoaPods
 
 Pikko is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Pikko'
+```
+
+### Swift Package Manager
+
+You can also install Pikko via the [Swift Package Manager](https://swift.org/package-manager/). For this, follow the Apple tutorial on [how to add custom packages](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app), with this repository link as the package Git URL:
+
+```
+https://github.com/melloskitten/pikko
 ```
 
 ## Authors
