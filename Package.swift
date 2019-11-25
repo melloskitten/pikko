@@ -8,7 +8,6 @@ let package = Package(
     platforms: [
         .iOS(.v13),
     ],
-    
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -24,9 +23,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Pikko",
-            dependencies: []),
+            dependencies: [],
+            path: "PikkoSPM/Pikko/Sources"),
         .testTarget(
             name: "PikkoTests",
-            dependencies: ["Pikko"]),
+            dependencies: ["Pikko"],
+            path: "PikkoSPM/Pikko/Tests"),
     ]
 )
