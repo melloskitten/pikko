@@ -6,6 +6,7 @@
 //
 
 import Foundation
+#if os(iOS)
 import UIKit
 
 /// Square view representing brightness and saturation.
@@ -277,3 +278,5 @@ extension BrightnessSaturationView: HueDelegate {
         }
     }
 }
+
+#endif

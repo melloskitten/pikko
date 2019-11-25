@@ -6,8 +6,8 @@
 //
 
 import Foundation
+#if os(iOS)
 import UIKit
-
 
 /// The Pikko colorpicker, holding the two subviews, namely the hue ring and brightness/saturation
 /// square picker.
@@ -146,3 +146,4 @@ extension Pikko: PikkoDelegate {
     }
 }
 
+#endif
