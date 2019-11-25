@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Convenience method for easy access of hue, saturation, brightness and alpha components
 /// of a UIColor.

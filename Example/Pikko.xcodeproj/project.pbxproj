@@ -284,7 +284,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Pikko/Pikko.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -293,7 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pikko_Example/Pods-Pikko_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1F40F4F38A200ADAF5AB52D /* [CP] Check Pods Manifest.lock */ = {
