@@ -1,42 +1,21 @@
 #
-# Be sure to run `pod lib lint Pikko.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Pikko'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Pikko.'
+  s.version          = '1.0.3'
+  s.summary          = 'Pikko - iOS color picker made with ❤️'
+  s.swift_version = '4.0'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Pikko is a simple and beautiful color picker for iOS. It's inspired by conventional color pickers from popular graphics tools such as _Photoshop_, _Paint Tool Sai_, _Procreate_ and many others. Pikko allows the selection of hue, saturation and brightness in a more pleasant way than boring sliders.
                        DESC
 
-  s.homepage         = 'https://github.com/Sandra/Pikko'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Sandra' => 'sandra.grujovic@tum.de' }
-  s.source           = { :git => 'https://github.com/Sandra/Pikko.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = 'https://github.com/melloskitten/pikko/'
+  s.license          = { :type => 'MIT' }
+  s.author           = { 'Sandra' => 'melloskitten@googlemail.com', 'Johannes' => 'mail@johannesrohwer.com' }
+  s.source           = { :git => 'https://github.com/melloskitten/pikko.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Pikko/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Pikko' => ['Pikko/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Pikko/Sources/Pikko/Classes/**/*'
 end

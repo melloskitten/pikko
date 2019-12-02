@@ -1,5 +1,5 @@
 PODS:
-  - Pikko (0.1.0)
+  - Pikko (1.0.3)
 
 DEPENDENCIES:
   - Pikko (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Pikko: 72274ad2cd89dd597b40d58a51e0cb2e3039849e
+  Pikko: e986639fff915e45964d39ed1898499e2751848e
 
 PODFILE CHECKSUM: 35064edcdad9ceed6a4f2bfb9204f96fc3db38a6
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.6.2

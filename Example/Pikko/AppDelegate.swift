@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  Pikko
+//  Pikko_Example
 //
-//  Created by Sandra on 09/18/2018.
-//  Copyright (c) 2018 Sandra. All rights reserved.
+//  Created by Sandra & Johannes
 //
 
 import UIKit
