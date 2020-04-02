@@ -268,14 +268,9 @@ internal class BrightnessSaturationView: UIView {
 
 extension BrightnessSaturationView: HueDelegate {
     internal func didUpdateHue(hue: CGFloat) {
-        DispatchQueue.main.async {
-            self.hue = hue
-            self.updateSelectorColor(point: self.selector.center)
-        }
-        
-        DispatchQueue.main.async {
-            self.saturationLayer?.colors = self.generateSaturationInterpolationArray(hue: hue)
-        }
+        self.hue = hue
+        self.updateSelectorColor(point: self.selector.center)
+        self.saturationLayer?.colors = self.generateSaturationInterpolationArray(hue: hue)
     }
 }
 
