@@ -22,7 +22,7 @@ public class Pikko: UIView {
 
     
     /// The PikkoDelegate that is called whenever the color is updated.
-    public var delegate: PikkoDelegate?
+    public weak var delegate: PikkoDelegate?
     
     // MARK: - Initializer.
 
