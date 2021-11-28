@@ -12,6 +12,6 @@ import UIKit
 
 
 /// Delegate used for writing back hue updates from the HueView.
-internal protocol HueDelegate {
+internal protocol HueDelegate: AnyObject {
     func didUpdateHue(hue: CGFloat)
 }

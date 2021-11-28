@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Delegate which propagates color changes of the colorpicker to its delegate.
-public protocol PikkoDelegate {
+public protocol PikkoDelegate: AnyObject {
     func writeBackColor(color: UIColor)
 }
 

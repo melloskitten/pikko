@@ -40,7 +40,7 @@ internal class BrightnessSaturationView: UIView {
     // MARK: - Public attributes.
     
     /// Delegate method for writing back changes in the color selection.
-    internal var delegate: PikkoDelegate?
+    internal weak var delegate: PikkoDelegate?
     
     // MARK: - Initializer.
     

@@ -42,7 +42,7 @@ internal class HueView: UIView {
     // MARK: Public attributes.
     
     /// Delegate that writes back changes of the hue value.
-    internal var delegate: HueDelegate?
+    internal weak var delegate: HueDelegate?
     
     // MARK: - Initializer.
     
